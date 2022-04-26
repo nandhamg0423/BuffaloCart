@@ -53,5 +53,30 @@ public class ExcelUtility {
         }
         return data;
     }
+    public Object[][]  getData(String sheetName) throws IOException {
+        DataFormatter formatter = new DataFormatter();
+        ArrayList<ArrayList<String> > data = new ArrayList<ArrayList<String> >();
+        f = new FileInputStream(Constants.TEST_DATA_EXCEL);
+        wb = new XSSFWorkbook(f);
+        sh = wb.getSheet(sheetName);
+        int rowCount=sh.getLastRowNum()-sh.getFirstRowNum();
+        ArrayList<String> excelRows = new ArrayList<String>();
+        for(int i=1;i<rowCount+1;i++){
+            int x=0;
+            Row row=sh.getRow(i);
+            String[] columnList=new String[row.getLastCellNum()];
+            for(int j=0;j<columnList.length;j++){
+                columnList[j]=formatter.formatCellValue(row.getCell(x));
+                x++;
+            }
+            data.add(new ArrayList<>(Arrays.asList(columnList)));
+        }
+
+        Object[][] arr = data.stream()
+                .map(l -> l.toArray(new String[l.size()]))
+                .toArray(Object[][]::new);
+
+        return arr;
+    }
 }
 

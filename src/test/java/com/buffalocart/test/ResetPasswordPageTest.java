@@ -21,7 +21,7 @@ public class ResetPasswordPageTest extends Base {
     ExcelUtility excel = new ExcelUtility();
     ThreadLocal<ExtentTest> extentTest = TestListener.getTestInstance();
     @Test(priority = 5, enabled = true, description = "TC_005_Reset Password Error Message")
-    public void Verify_error_message_displyed_on_Reset_Password_page_with_invalid_email_id() throws IOException {
+    public void verify_error_message_displyed_on_Reset_Password_page_with_invalid_email_id() throws IOException {
         extentTest.get().assignCategory("Regression");
         login=new LoginPage(driver);
         reset=login.clickOnForgot();

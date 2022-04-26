@@ -9,6 +9,7 @@ import com.buffalocart.pages.LoginPage;
 import com.buffalocart.pages.MyAccountPage;
 import com.buffalocart.utilities.ExcelUtility;
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
@@ -47,27 +48,29 @@ public class LoginPageTest extends Base {
         extentTest.get().log(Status.PASS, "Login Button Clicked successfully");
     }
 
-    @Test(priority = 3, enabled = true, description = "TC_003_Verify Error Message")
-    public void Verify_the_error_message_displayed_for_user_login_with_invalid_credentials() throws IOException {
-        extentTest.get().assignCategory("Regression");
-        login = new LoginPage(driver);
-        List<String> list = excel.readDataFromExcel("LoginPage");
-        login.enterUsername(list.get(6));
-        extentTest.get().log(Status.PASS, "Valid Username selected successfully");
-        login.enterPassword(list.get(11));
-        extentTest.get().log(Status.PASS, "Invalid password selected successfully");
-        acc = login.loginButton();
-        extentTest.get().log(Status.PASS, "Login Button Clicked successfully");
-        System.out.println(list);
-        String actual = list.get(9);
-        extentTest.get().log(Status.PASS, "Actual password got successfully");
-        String expected = login.getFailedMessage();
-        Assert.assertEquals(actual, expected, "Not correct message");
-        extentTest.get().log(Status.PASS, "Error message found successfully");
+    @Test(priority = 3,dataProvider = "user_credentials",enabled = true,groups = {"Regression"},description = "TC_003_Verify the error message displayed for user login with invalid credentialss")
+    public void verify_the_error_message_displayed_for_user_login_with_invalid_credentials(String uname, String pword) throws IOException {
+       extentTest.get().assignCategory("Regression");
+       login = new LoginPage(driver);
+       login.enterUsername(uname);
+       extentTest.get().log(Status.PASS, "Uassword selected successfully");
+       login.enterPassword(pword);
+       extentTest.get().log(Status.PASS, "Password selected successfully");
+       login.rememberMe();
+       acc=login.loginButton();
+       extentTest.get().log(Status.PASS, "ILogin button clicked successfully");
+       String expectedErrorMessage ="These credentials do not match our records.";
+       String actualErrorMessage =login.getFailedMessage();
+       Assert.assertEquals(actualErrorMessage,expectedErrorMessage,"Logged In-Having Error in Login");
+    }
+    @DataProvider(name = "user_credentials")
+    public Object[][] userLoginData() throws IOException {
+        Object[][] data = excel.getData("Login_invalidCredetials");
+        return data;
     }
 
-    @Test(priority = 4, enabled = true, description = "TC_003_Verify Remember Me")
-    public void Verify_whether_the_user_is_able_to_click_on_Remember_me_checkbox() throws IOException {
+    @Test(priority = 4, enabled = true, description = "TC_004_Verify Remember Me")
+    public void verify_whether_the_user_is_able_to_click_on_Remember_me_checkbox() throws IOException {
         extentTest.get().assignCategory("Regression");
         List<String> list = excel.readDataFromExcel("LoginPage");
         login = new LoginPage(driver);
@@ -80,5 +83,4 @@ public class LoginPageTest extends Base {
         acc = login.loginButton();
         extentTest.get().log(Status.PASS, "Login Button Clicked successfully");
     }
-
 }

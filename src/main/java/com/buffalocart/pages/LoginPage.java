@@ -51,7 +51,6 @@ public class LoginPage extends ObjectUtility {
     @FindBy(xpath = _forgotPassword)
     private WebElement forgotPassword;
 
-
     /**
      * user action methods
      **/
@@ -64,7 +63,6 @@ public class LoginPage extends ObjectUtility {
     public void enterUsername(String uName) {
         page.enterText(username, uName);
     }
-
     public void enterPassword(String pass) {
         page.enterText(password, pass);
     }
@@ -77,7 +75,6 @@ public class LoginPage extends ObjectUtility {
     public void rememberMe() {
         page.clickOnElement(rememberMe);
     }
-
     public String getFailedMessage() throws IOException {
         String errorMessage = page.getElementText(invalidCredential);
         String exp = String.valueOf(excel.readDataFromExcel("LoginPage"));

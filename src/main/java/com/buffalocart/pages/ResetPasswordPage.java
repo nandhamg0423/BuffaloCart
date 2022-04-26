@@ -10,9 +10,7 @@ import java.io.IOException;
 
 public class ResetPasswordPage extends ObjectUtility {
     WebDriver driver;
-    /**
-     * page constructor
-     **/
+    /** page constructor  **/
 
     public ResetPasswordPage(WebDriver driver) {
         this.driver = driver;
@@ -20,7 +18,6 @@ public class ResetPasswordPage extends ObjectUtility {
     }
 
     /**page elements**/
-
 
     private final String _invalidEmailForForgot = "//input[@class='form-control']";
     @FindBy(xpath = _invalidEmailForForgot)
@@ -34,24 +31,17 @@ public class ResetPasswordPage extends ObjectUtility {
     @FindBy(xpath = _resetErrorMessage)
     private WebElement resetErrorMessage;
 
-
-
 /**user action**/
-
 
     public void invalidEmailForForgot(String invalidEmail) {
         page.enterText(invalidEmailForForgot, invalidEmail);
     }
-
     public void resetButton() {
         page.clickOnElement(resetButton);
     }
-
     public void resetErrormessage() {
         page.clickOnElement(resetErrorMessage);
     }
-
-
     public String getResetErrorMessage() throws IOException {
         String reseterrorMessage = page.getElementText(resetErrorMessage);
         String exp = String.valueOf(excel.readDataFromExcel("LoginPage"));

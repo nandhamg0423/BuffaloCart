@@ -53,7 +53,7 @@ public class LoginPageTest extends Base {
         login = new LoginPage(driver);
         List<String> list = excel.readDataFromExcel("LoginPage");
         login.enterUsername(list.get(6));
-        extentTest.get().log(Status.PASS, "Invalid Username selected successfully");
+        extentTest.get().log(Status.PASS, "Valid Username selected successfully");
         login.enterPassword(list.get(11));
         extentTest.get().log(Status.PASS, "Invalid password selected successfully");
         acc = login.loginButton();
@@ -78,7 +78,7 @@ public class LoginPageTest extends Base {
         login.rememberMe();
         extentTest.get().log(Status.PASS, "Remember me selected successfully");
         acc = login.loginButton();
-        extentTest.get().log(Status.PASS, "Invalid password selected successfully");
+        extentTest.get().log(Status.PASS, "Login Button Clicked successfully");
     }
 
 }

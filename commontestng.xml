@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="CCommon Testing">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="url" value="https://qalegend.com/billing/public/login"/>
+        <classes>
+            <class name="com.buffalocart.test.LoginPageTest">
+                <methods>
+                    <include name="verify_Loginpage_Title"/>
+                    <include name="verify_user_login_with_valid_user_credentials"/>
+                    <include name="Verify_the_error_message_displayed_for_user_login_with_invalid_credentials"/>
+                    <include name="Verify_whether_the_user_is_able_to_click_on_Remember_me_checkbox"/>
+                </methods>
+            </class>
+            <class name="com.buffalocart.test.ResetPasswordPageTest">
+                <methods>
+                    <include name="Verify_error_message_displyed_on_Reset_Password_page_with_invalid_email_id"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

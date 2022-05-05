@@ -10,6 +10,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -19,10 +20,18 @@ public class ExcelUtility {
     public static XSSFWorkbook wb;
     public static XSSFSheet sh;
     public static FileInputStream f;
-    public List<String> readDataFromExcel(String sheetName) throws IOException {
+    public List<String> readDataFromExcel(String sheetName) {
         DataFormatter formatter = new DataFormatter();
-        f = new FileInputStream(Constants.TEST_DATA_EXCEL);
-        wb = new XSSFWorkbook(f);
+        try {
+            f = new FileInputStream(Constants.TEST_DATA_EXCEL);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        try {
+            wb = new XSSFWorkbook(f);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         sh = wb.getSheet(sheetName);
         ArrayList<String> excelRows = new ArrayList<String>();
         for (Row r : sh) {
@@ -33,11 +42,19 @@ public class ExcelUtility {
         return excelRows;
     }
 
-    public ArrayList<ArrayList<String>> readDatasFromExcel(String sheetName) throws IOException {
+    public ArrayList<ArrayList<String>> readDatasFromExcel(String sheetName) {
         DataFormatter formatter = new DataFormatter();
         ArrayList<ArrayList<String> > data = new ArrayList<ArrayList<String> >();
-        f = new FileInputStream(Constants.TEST_DATA_EXCEL);
-        wb = new XSSFWorkbook(f);
+        try {
+            f = new FileInputStream(Constants.TEST_DATA_EXCEL);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        try {
+            wb = new XSSFWorkbook(f);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         sh = wb.getSheet(sheetName);
         int rowCount=sh.getLastRowNum()-sh.getFirstRowNum();
         ArrayList<String> excelRows = new ArrayList<String>();
@@ -53,11 +70,19 @@ public class ExcelUtility {
         }
         return data;
     }
-    public Object[][]  getData(String sheetName) throws IOException {
+    public Object[][]  getData(String sheetName){
         DataFormatter formatter = new DataFormatter();
         ArrayList<ArrayList<String> > data = new ArrayList<ArrayList<String> >();
-        f = new FileInputStream(Constants.TEST_DATA_EXCEL);
-        wb = new XSSFWorkbook(f);
+        try {
+            f = new FileInputStream(Constants.TEST_DATA_EXCEL);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        try {
+            wb = new XSSFWorkbook(f);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         sh = wb.getSheet(sheetName);
         int rowCount=sh.getLastRowNum()-sh.getFirstRowNum();
         ArrayList<String> excelRows = new ArrayList<String>();

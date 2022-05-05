@@ -4,36 +4,34 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.buffalocart.automationcore.Base;
 import com.buffalocart.listeners.TestListener;
-import com.buffalocart.pages.HomePage;
 import com.buffalocart.pages.LoginPage;
 import com.buffalocart.pages.ResetPasswordPage;
 import com.buffalocart.utilities.ExcelUtility;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import java.io.IOException;
 import java.util.List;
-
 public class ResetPasswordPageTest extends Base {
     LoginPage login;
-    HomePage home;
     ResetPasswordPage reset;
     ExcelUtility excel = new ExcelUtility();
     ThreadLocal<ExtentTest> extentTest = TestListener.getTestInstance();
-    @Test(priority = 5, enabled = true, description = "TC_005_Reset Password Error Message")
-    public void verify_error_message_displyed_on_Reset_Password_page_with_invalid_email_id() throws IOException {
+
+    @Test(priority = 5, enabled = true, description = "TC_005_Verify error meesage displyed on  Reset Password page with invalid email id")
+    public void verify_error_message_displyed_on_Reset_Password_page_with_invalid_email_id(){
         extentTest.get().assignCategory("Regression");
+        extentTest.get().assignCategory("Sanity");
         login=new LoginPage(driver);
-        reset=login.clickOnForgot();
+        reset=login.clickOnForgotLink();
         extentTest.get().log(Status.PASS, "Forgot link Clicked");
-        reset.invalidEmailForForgot("agsfdrrrr@gmail.com");
+        reset.enterEmailid("agsfdrrrr@gmail.com");
         extentTest.get().log(Status.PASS, "Invalid email id entered successfully");
-        reset.resetButton();
+        reset.clickOnResetButton();
         extentTest.get().log(Status.PASS, "Reset button clicked successfully");
         List<String> list = excel.readDataFromExcel("LoginPage");
-        String expected=list.get(10);
-        String actual=reset.getResetErrorMessage();
+        System.out.println(list);
+        String actualErrorMessage=reset.getResetErrorMessage();
+        String expectedErrorMessage=list.get(10);
         extentTest.get().log(Status.PASS, "Actual reset password error got successfully");
-        Assert.assertEquals(actual,expected,"Not error message");
+        Assert.assertEquals(actualErrorMessage,expectedErrorMessage,"Invalid error message displayed");
     }
 }

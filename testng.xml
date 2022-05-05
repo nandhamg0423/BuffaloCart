@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="com.buffalocart.listeners.TestListener"/>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="C:/Users/USER/IdeaProjects/buffalocart">
+        <classes>
+            <class name="com.buffalocart.utilities.RandomDataUtility">
+                <methods>
+                    <include name="random"/>
+                    <include name="randomId"/>
+                </methods>
+            </class>
+            <class name="com.buffalocart.test.AddRolesTestPage">
+                <methods>
+                    <include name="verify_Add_Roles_page_title"/>
+                    <include name="verify_user_can_add_roles"/>
+                </methods>
+            </class>
+            <class name="com.buffalocart.test.AddUserTestPage">
+                <methods>
+                    <include
+                            name="verify_the_error_message_displayed_without_filling_mandatory_fields_in_add_user_form"/>
+                    <include name="verify_Add_Users_page_title"/>
+                </methods>
+            </class>
+            <class name="com.buffalocart.test.EditPageTest">
+                <methods>
+                    <include name="verify_Edit_User_page_title"/>
+                    <include name="verify_user_can_edit_the_user_details"/>
+                </methods>
+            </class>
+            <class name="com.buffalocart.test.EditRolePageTest">
+                <methods>
+                    <include name="verify_Edit_Role_page_title"/>
+                    <include name="verify_user_can_update_a_role"/>
+                </methods>
+            </class>
+            <class name="com.buffalocart.test.LoginPageTest">
+                <methods>
+                    <include name="verify_Loginpage_Title"/>
+                    <include name="verify_user_login_with_valid_user_credentials"/>
+                    <include name="verify_whether_the_user_is_able_to_click_on_Remember_me_checkbox"/>
+                    <include name="verify_user_login_with_newly_added_user"/>
+                </methods>
+            </class>
+            <class name="com.buffalocart.test.MyAccountPageTest">
+                <methods>
+                    <include name="verify_home_page_tilte"/>
+                    <include name="Verify_date_displeyed_in_home_page"/>
+                    <include name="Verify_whether_user_is_navigating_to_login_page_by_clicking_on_Sign_out_button"/>
+                    <include name="Verify_the_Usermanagement_sub_tabs"/>
+                </methods>
+            </class>
+            <class name="com.buffalocart.test.ResetPasswordPageTest">
+                <methods>
+                    <include name="verify_error_message_displyed_on_Reset_Password_page_with_invalid_email_id"/>
+                </methods>
+            </class>
+            <class name="com.buffalocart.test.RolesPageTest">
+                <methods>
+                    <include name="verify_Roles_page_title"/>
+                    <include name="verify_user_can_delete_a_role_from_the_list"/>
+                </methods>
+            </class>
+            <class name="com.buffalocart.test.SalesCommissionAgentPageTest">
+                <methods>
+                    <include name="verify_Sales_Commission_Agents_page_title"/>
+                    <include name="Verify_user_can_add_sales_agent"/>
+                    <include name="verify_Edit_sales_agent_details"/>
+                    <include name="verify_user_can_delete_a_Sales_Commission_Agents"/>
+                </methods>
+            </class>
+            <class name="com.buffalocart.test.UserPageTest">
+                <methods>
+                    <include name="verify_Users_page_title"/>
+                    <include name="verify_user_search_with_valid_data"/>
+                    <include name="verify_message_displayed_by_user_search_with_invalid_data"/>
+                    <include name="verify_user_can_delete_a_user"/>
+                </methods>
+            </class>
+            <class name="com.buffalocart.test.ViewPageTest">
+                <methods>
+                    <include name="verify_the_details_displayed_on_view_user_page"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

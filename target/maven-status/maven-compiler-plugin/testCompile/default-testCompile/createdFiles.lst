@@ -1,0 +1,11 @@
+com\buffalocart\test\AddUserTestPage.class
+com\buffalocart\test\ResetPasswordPageTest.class
+com\buffalocart\test\AddRolesTestPage.class
+com\buffalocart\test\EditRolePageTest.class
+com\buffalocart\test\EditPageTest.class
+com\buffalocart\test\RolesPageTest.class
+com\buffalocart\test\ViewPageTest.class
+com\buffalocart\test\LoginPageTest.class
+com\buffalocart\test\MyAccountPageTest.class
+com\buffalocart\test\SalesCommissionAgentPageTest.class
+com\buffalocart\test\UserPageTest.class

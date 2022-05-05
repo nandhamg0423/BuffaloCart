@@ -6,10 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import java.io.IOException;
-
 public class ResetPasswordPage extends ObjectUtility {
     WebDriver driver;
+
     /** page constructor  **/
 
     public ResetPasswordPage(WebDriver driver) {
@@ -33,18 +32,19 @@ public class ResetPasswordPage extends ObjectUtility {
 
 /**user action**/
 
-    public void invalidEmailForForgot(String invalidEmail) {
+    public void enterEmailid(String invalidEmail) {
         page.enterText(invalidEmailForForgot, invalidEmail);
     }
-    public void resetButton() {
+    public void clickOnResetButton() {
         page.clickOnElement(resetButton);
     }
+
     public void resetErrormessage() {
         page.clickOnElement(resetErrorMessage);
     }
-    public String getResetErrorMessage() throws IOException {
+
+    public String getResetErrorMessage(){
         String reseterrorMessage = page.getElementText(resetErrorMessage);
-        String exp = String.valueOf(excel.readDataFromExcel("LoginPage"));
         return reseterrorMessage;
     }
 }

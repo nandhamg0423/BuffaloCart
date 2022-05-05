@@ -11,18 +11,15 @@ import java.io.IOException;
 public class LoginPage extends ObjectUtility {
     WebDriver driver;
 
-    /**
-     * page constructor
-     **/
+    /** page constructor **/
 
     public LoginPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
 
-    /**
-     * page elements
-     **/
+    /** page elements **/
+
     private final String _username = "//input[@id='username']";
     @FindBy(xpath = _username)
     private WebElement username;
@@ -51,37 +48,35 @@ public class LoginPage extends ObjectUtility {
     @FindBy(xpath = _forgotPassword)
     private WebElement forgotPassword;
 
-    /**
-     * user action methods
-     **/
+    /** user action methods **/
 
     public String getLoginPageTitle() {
         String loginTitle = page.getPageTitle(driver);
         return loginTitle;
     }
-
     public void enterUsername(String uName) {
         page.enterText(username, uName);
     }
     public void enterPassword(String pass) {
         page.enterText(password, pass);
     }
-
-    public MyAccountPage loginButton() {
+    public MyAccountPage clickOnloginButton() {
         page.clickOnElement(loginButton);
         return new MyAccountPage(driver);
     }
-
-    public void rememberMe() {
+    public void clickOnRememberMeCheckBox() {
         page.clickOnElement(rememberMe);
     }
-    public String getFailedMessage() throws IOException {
+    public String getLoginFailedMessage() {
         String errorMessage = page.getElementText(invalidCredential);
-        String exp = String.valueOf(excel.readDataFromExcel("LoginPage"));
         return errorMessage;
     }
-    public ResetPasswordPage clickOnForgot() {
+    public ResetPasswordPage clickOnForgotLink() {
         page.clickOnElement(forgotPassword);
         return new ResetPasswordPage(driver);
+    }
+    public boolean getRememberMeCheckBoxSelectionStatus() {
+        Boolean checkBoxSelectionStatus = page.isElementSelected(rememberMe);
+        return checkBoxSelectionStatus;
     }
 }

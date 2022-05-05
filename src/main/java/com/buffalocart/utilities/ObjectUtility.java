@@ -6,5 +6,6 @@ public class ObjectUtility {
     public RandomDataUtility random=new RandomDataUtility();
     public TableUtility table=new TableUtility();
     public WaitUtility wait=new WaitUtility();
+    public DateUtility date=new DateUtility();
 }
 

@@ -9,7 +9,6 @@
       <class name="com.buffalocart.test.SalesCommissionAgentPageTest">
         <methods>
           <include name="setUp"/>
-          <include name="verify_user_can_delete_a_Sales_Commission_Agents"/>
           <include name="verify_Edit_sales_agent_details"/>
           <include name="setExtent"/>
           <include name="tearDown"/>
@@ -23,6 +22,14 @@
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.buffalocart.test.LoginPageTest -->
+      <class name="com.buffalocart.test.RolesPageTest">
+        <methods>
+          <include name="setExtent"/>
+          <include name="setUp"/>
+          <include name="verify_user_can_delete_a_role_from_the_list"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.buffalocart.test.RolesPageTest -->
       <class name="com.buffalocart.test.ViewPageTest">
         <methods>
           <include name="verify_the_details_displayed_on_view_user_page"/>
@@ -31,14 +38,6 @@
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.buffalocart.test.ViewPageTest -->
-      <class name="com.buffalocart.test.UserPageTest">
-        <methods>
-          <include name="verify_user_can_delete_a_user"/>
-          <include name="setUp"/>
-          <include name="setExtent"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.buffalocart.test.UserPageTest -->
     </classes>
   </test> <!-- C:/Users/USER/IdeaProjects/buffalocart(failed) -->
 </suite> <!-- Failed suite [All Test Suite] -->

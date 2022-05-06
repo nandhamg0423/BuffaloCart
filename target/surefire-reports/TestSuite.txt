@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 28, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 549.046 s <<< FAILURE! - in TestSuite
-com.buffalocart.test.LoginPageTest.verify_user_login_with_newly_added_user  Time elapsed: 1.824 s  <<< FAILURE!
+Tests run: 28, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 561.935 s <<< FAILURE! - in TestSuite
+com.buffalocart.test.LoginPageTest.verify_user_login_with_newly_added_user  Time elapsed: 1.679 s  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
 no such element: Unable to locate element: {"method":"css selector","selector":"a[class='dropdown-toggle']>span"}
   (Session info: chrome=101.0.4951.54)
@@ -10,12 +10,25 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.1.3', revision: '7b1ebf28ef'
 System info: host: 'LAPTOP-V0HJLHIK', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d4300a2cb366f2570dceff196f8b36da, findElement {using=css selector, value=a[class='dropdown-toggle']>span}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\USER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:56274}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56274/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d4300a2cb366f2570dceff196f8b36da
+Command: [11b0d428c0510f5b1e5553ce64b58e82, findElement {using=css selector, value=a[class='dropdown-toggle']>span}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\USER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57715}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57715/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 11b0d428c0510f5b1e5553ce64b58e82
 	at com.buffalocart.test.LoginPageTest.verify_user_login_with_newly_added_user(LoginPageTest.java:99)
 
-com.buffalocart.test.SalesCommissionAgentPageTest.verify_Edit_sales_agent_details  Time elapsed: 14.962 s  <<< FAILURE!
+com.buffalocart.test.RolesPageTest.verify_user_can_delete_a_role_from_the_list  Time elapsed: 16.306 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <button class="swal-button swal-button--confirm swal-button--danger">...</button> is not clickable at point (892, 428). Other element would receive the click: <div class="swal-footer">...</div>
+  (Session info: chrome=101.0.4951.54)
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'LAPTOP-V0HJLHIK', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [eb6aa8d1283778e23c46c2f88fa9fcd8, clickElement {id=8f276a75-519e-4dc3-a838-65f82c581967}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\USER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57989}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57989/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (eb6aa8d1283778e23c46c2f88fa9fcd8)] -> xpath: //button[@class='swal-button swal-button--confirm swal-button--danger']]
+Session ID: eb6aa8d1283778e23c46c2f88fa9fcd8
+	at com.buffalocart.test.RolesPageTest.verify_user_can_delete_a_role_from_the_list(RolesPageTest.java:85)
+
+com.buffalocart.test.SalesCommissionAgentPageTest.verify_Edit_sales_agent_details  Time elapsed: 15.582 s  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
 no such element: Unable to locate element: {"method":"xpath","selector":"//button[@class='btn btn-xs btn-modal btn-primary']"}
   (Session info: chrome=101.0.4951.54)
@@ -23,38 +36,12 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.1.3', revision: '7b1ebf28ef'
 System info: host: 'LAPTOP-V0HJLHIK', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2f4a9dbb498ed397c1888b368a3e46e3, findElement {using=xpath, value=//button[@class='btn btn-xs btn-modal btn-primary']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\USER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:56727}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56727/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 2f4a9dbb498ed397c1888b368a3e46e3
+Command: [e11a80b296f4717fd75c5c3615792a70, findElement {using=xpath, value=//button[@class='btn btn-xs btn-modal btn-primary']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\USER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58190}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58190/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e11a80b296f4717fd75c5c3615792a70
 	at com.buffalocart.test.SalesCommissionAgentPageTest.verify_Edit_sales_agent_details(SalesCommissionAgentPageTest.java:127)
 
-com.buffalocart.test.SalesCommissionAgentPageTest.verify_user_can_delete_a_Sales_Commission_Agents  Time elapsed: 14.215 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//button[@class='btn btn-xs btn-modal btn-primary']/following-sibling::button"}
-  (Session info: chrome=101.0.4951.54)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.3', revision: '7b1ebf28ef'
-System info: host: 'LAPTOP-V0HJLHIK', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [80b941d6625609be3b2e519b26a6e653, findElement {using=xpath, value=//button[@class='btn btn-xs btn-modal btn-primary']/following-sibling::button}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\USER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:56778}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56778/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 80b941d6625609be3b2e519b26a6e653
-	at com.buffalocart.test.SalesCommissionAgentPageTest.verify_user_can_delete_a_Sales_Commission_Agents(SalesCommissionAgentPageTest.java:177)
-
-com.buffalocart.test.UserPageTest.verify_user_can_delete_a_user  Time elapsed: 17.318 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"css selector","selector":"div[class='toast-message']"}
-  (Session info: chrome=101.0.4951.54)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.3', revision: '7b1ebf28ef'
-System info: host: 'LAPTOP-V0HJLHIK', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b6469cd2d271f3b3ca421277b1f70372, findElement {using=css selector, value=div[class='toast-message']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\USER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:56960}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56960/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b6469cd2d271f3b3ca421277b1f70372
-	at com.buffalocart.test.UserPageTest.verify_user_can_delete_a_user(UserPageTest.java:171)
-
-com.buffalocart.test.ViewPageTest.verify_the_details_displayed_on_view_user_page  Time elapsed: 14.093 s  <<< FAILURE!
+com.buffalocart.test.ViewPageTest.verify_the_details_displayed_on_view_user_page  Time elapsed: 15.154 s  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
 no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='btn btn-xs btn-info']"}
   (Session info: chrome=101.0.4951.54)
@@ -62,8 +49,8 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.1.3', revision: '7b1ebf28ef'
 System info: host: 'LAPTOP-V0HJLHIK', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [39e165667d64d6f38488219abdab396d, findElement {using=xpath, value=//a[@class='btn btn-xs btn-info']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\USER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57010}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57010/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 39e165667d64d6f38488219abdab396d
+Command: [5d7a018814ba11a48513c5f5ab1eb6e7, findElement {using=xpath, value=//a[@class='btn btn-xs btn-info']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\USER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58498}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58498/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5d7a018814ba11a48513c5f5ab1eb6e7
 	at com.buffalocart.test.ViewPageTest.verify_the_details_displayed_on_view_user_page(ViewPageTest.java:56)
 

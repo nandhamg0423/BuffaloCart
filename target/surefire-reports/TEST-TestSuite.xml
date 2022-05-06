@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="549.046" tests="28" errors="0" skipped="0" failures="5">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="561.935" tests="28" errors="0" skipped="0" failures="4">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -19,7 +19,7 @@
     <property name="user.country" value="IN"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jre1.8.0_241\bin"/>
-    <property name="sun.java.command" value="C:\Users\USER\AppData\Local\Temp\surefire443550885229609392\surefirebooter5395989776307609822.jar C:\Users\USER\AppData\Local\Temp\surefire443550885229609392 2022-05-06T14-51-23_306-jvmRun1 surefire3580953940841520300tmp surefire_07817098400515199659tmp"/>
+    <property name="sun.java.command" value="C:\Users\USER\AppData\Local\Temp\surefire7610113222222847185\surefirebooter8601851318142653521.jar C:\Users\USER\AppData\Local\Temp\surefire7610113222222847185 2022-05-06T15-11-09_494-jvmRun1 surefire6910687886654649049tmp surefire_08016227523692659167tmp"/>
     <property name="surefire.test.class.path" value="C:\Users\USER\IdeaProjects\buffalocart\target\test-classes;C:\Users\USER\IdeaProjects\buffalocart\target\classes;C:\Users\USER\.m2\repository\org\seleniumhq\selenium\selenium-java\4.1.3\selenium-java-4.1.3.jar;C:\Users\USER\.m2\repository\org\seleniumhq\selenium\selenium-api\4.1.3\selenium-api-4.1.3.jar;C:\Users\USER\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.1.3\selenium-chrome-driver-4.1.3.jar;C:\Users\USER\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar;C:\Users\USER\.m2\repository\com\google\auto\service\auto-service\1.0.1\auto-service-1.0.1.jar;C:\Users\USER\.m2\repository\com\google\auto\auto-common\1.2\auto-common-1.2.jar;C:\Users\USER\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar;C:\Users\USER\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\USER\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\USER\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\USER\.m2\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar;C:\Users\USER\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\USER\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.1.3\selenium-chromium-driver-4.1.3.jar;C:\Users\USER\.m2\repository\org\seleniumhq\selenium\selenium-json\4.1.3\selenium-json-4.1.3.jar;C:\Users\USER\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.1.3\selenium-devtools-v85-4.1.3.jar;C:\Users\USER\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v97\4.1.3\selenium-devtools-v97-4.1.3.jar;C:\Users\USER\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v98\4.1.3\selenium-devtools-v98-4.1.3.jar;C:\Users\USER\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v99\4.1.3\selenium-devtools-v99-4.1.3.jar;C:\Users\USER\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.1.3\selenium-edge-driver-4.1.3.jar;C:\Users\USER\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.1.3\selenium-firefox-driver-4.1.3.jar;C:\Users\USER\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.1.3\selenium-ie-driver-4.1.3.jar;C:\Users\USER\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\4.1.3\selenium-opera-driver-4.1.3.jar;C:\Users\USER\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.1.3\selenium-remote-driver-4.1.3.jar;C:\Users\USER\.m2\repository\io\netty\netty-buffer\4.1.75.Final\netty-buffer-4.1.75.Final.jar;C:\Users\USER\.m2\repository\io\netty\netty-codec-http\4.1.75.Final\netty-codec-http-4.1.75.Final.jar;C:\Users\USER\.m2\repository\io\netty\netty-codec\4.1.75.Final\netty-codec-4.1.75.Final.jar;C:\Users\USER\.m2\repository\io\netty\netty-handler\4.1.75.Final\netty-handler-4.1.75.Final.jar;C:\Users\USER\.m2\repository\io\netty\netty-common\4.1.75.Final\netty-common-4.1.75.Final.jar;C:\Users\USER\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.75.Final\netty-transport-classes-epoll-4.1.75.Final.jar;C:\Users\USER\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.75.Final\netty-transport-classes-kqueue-4.1.75.Final.jar;C:\Users\USER\.m2\repository\io\netty\netty-transport-native-epoll\4.1.75.Final\netty-transport-native-epoll-4.1.75.Final.jar;C:\Users\USER\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.75.Final\netty-transport-native-kqueue-4.1.75.Final.jar;C:\Users\USER\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.75.Final\netty-transport-native-unix-common-4.1.75.Final.jar;C:\Users\USER\.m2\repository\io\netty\netty-transport\4.1.75.Final\netty-transport-4.1.75.Final.jar;C:\Users\USER\.m2\repository\io\netty\netty-resolver\4.1.75.Final\netty-resolver-4.1.75.Final.jar;C:\Users\USER\.m2\repository\io\opentelemetry\opentelemetry-api\1.12.0\opentelemetry-api-1.12.0.jar;C:\Users\USER\.m2\repository\io\opentelemetry\opentelemetry-context\1.12.0\opentelemetry-context-1.12.0.jar;C:\Users\USER\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.12.0\opentelemetry-exporter-logging-1.12.0.jar;C:\Users\USER\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.12.0-alpha\opentelemetry-sdk-metrics-1.12.0-alpha.jar;C:\Users\USER\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.12.0-alpha\opentelemetry-sdk-logs-1.12.0-alpha.jar;C:\Users\USER\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.12.0\opentelemetry-sdk-common-1.12.0.jar;C:\Users\USER\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.12.0\opentelemetry-sdk-extension-autoconfigure-spi-1.12.0.jar;C:\Users\USER\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.12.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.12.0-alpha.jar;C:\Users\USER\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.12.0\opentelemetry-sdk-trace-1.12.0.jar;C:\Users\USER\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.12.0\opentelemetry-sdk-1.12.0.jar;C:\Users\USER\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.12.0-alpha\opentelemetry-semconv-1.12.0-alpha.jar;C:\Users\USER\.m2\repository\io\ous\jtoml\2.0.0\jtoml-2.0.0.jar;C:\Users\USER\.m2\repository\net\bytebuddy\byte-buddy\1.12.8\byte-buddy-1.12.8.jar;C:\Users\USER\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\USER\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\USER\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\USER\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\USER\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\USER\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\USER\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\USER\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\USER\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\USER\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\USER\.m2\repository\org\seleniumhq\selenium\selenium-http\4.1.3\selenium-http-4.1.3.jar;C:\Users\USER\.m2\repository\dev\failsafe\failsafe\3.2.3\failsafe-3.2.3.jar;C:\Users\USER\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.1.3\selenium-safari-driver-4.1.3.jar;C:\Users\USER\.m2\repository\org\seleniumhq\selenium\selenium-support\4.1.3\selenium-support-4.1.3.jar;C:\Users\USER\.m2\repository\org\testng\testng\7.5\testng-7.5.jar;C:\Users\USER\.m2\repository\com\google\code\findbugs\jsr305\3.0.1\jsr305-3.0.1.jar;C:\Users\USER\.m2\repository\org\slf4j\slf4j-api\1.7.32\slf4j-api-1.7.32.jar;C:\Users\USER\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\USER\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;C:\Users\USER\.m2\repository\org\apache\poi\poi\5.2.2\poi-5.2.2.jar;C:\Users\USER\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\USER\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\USER\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\USER\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\USER\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\USER\.m2\repository\org\apache\logging\log4j\log4j-api\2.17.2\log4j-api-2.17.2.jar;C:\Users\USER\.m2\repository\org\apache\poi\poi-ooxml\5.2.2\poi-ooxml-5.2.2.jar;C:\Users\USER\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.2\poi-ooxml-lite-5.2.2.jar;C:\Users\USER\.m2\repository\org\apache\xmlbeans\xmlbeans\5.0.3\xmlbeans-5.0.3.jar;C:\Users\USER\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar;C:\Users\USER\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\USER\.m2\repository\com\github\virtuald\curvesapi\1.07\curvesapi-1.07.jar;C:\Users\USER\.m2\repository\io\github\bonigarcia\webdrivermanager\5.1.1\webdrivermanager-5.1.1.jar;C:\Users\USER\.m2\repository\com\google\code\gson\gson\2.9.0\gson-2.9.0.jar;C:\Users\USER\.m2\repository\com\github\docker-java\docker-java\3.2.13\docker-java-3.2.13.jar;C:\Users\USER\.m2\repository\com\github\docker-java\docker-java-core\3.2.13\docker-java-core-3.2.13.jar;C:\Users\USER\.m2\repository\com\github\docker-java\docker-java-api\3.2.13\docker-java-api-3.2.13.jar;C:\Users\USER\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\USER\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\USER\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\USER\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.64\bcpkix-jdk15on-1.64.jar;C:\Users\USER\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.64\bcprov-jdk15on-1.64.jar;C:\Users\USER\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\USER\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.2.13\docker-java-transport-httpclient5-3.2.13.jar;C:\Users\USER\.m2\repository\com\github\docker-java\docker-java-transport\3.2.13\docker-java-transport-3.2.13.jar;C:\Users\USER\.m2\repository\net\java\dev\jna\jna\5.8.0\jna-5.8.0.jar;C:\Users\USER\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\USER\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\USER\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.1.3\httpclient5-5.1.3.jar;C:\Users\USER\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.1.3\httpcore5-5.1.3.jar;C:\Users\USER\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.1.3\httpcore5-h2-5.1.3.jar;C:\Users\USER\.m2\repository\com\aventstack\extentreports\3.0.0\extentreports-3.0.0.jar;C:\Users\USER\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\USER\.m2\repository\org\mongodb\mongodb-driver\3.3.0\mongodb-driver-3.3.0.jar;C:\Users\USER\.m2\repository\org\mongodb\bson\3.3.0\bson-3.3.0.jar;C:\Users\USER\.m2\repository\org\mongodb\mongodb-driver-core\3.3.0\mongodb-driver-core-3.3.0.jar;C:\Users\USER\.m2\repository\org\apache\httpcomponents\httpclient\4.5.2\httpclient-4.5.2.jar;C:\Users\USER\.m2\repository\org\apache\httpcomponents\httpcore\4.4.4\httpcore-4.4.4.jar;C:\Users\USER\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\USER\.m2\repository\org\apache\httpcomponents\httpmime\4.5.2\httpmime-4.5.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\USER"/>
@@ -32,7 +32,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\USER\AppData\Local\Temp\surefire443550885229609392\surefirebooter5395989776307609822.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\USER\AppData\Local\Temp\surefire7610113222222847185\surefirebooter8601851318142653521.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jre1.8.0_241\lib\resources.jar;C:\Program Files\Java\jre1.8.0_241\lib\rt.jar;C:\Program Files\Java\jre1.8.0_241\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_241\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_241\lib\jce.jar;C:\Program Files\Java\jre1.8.0_241\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_241\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_241\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -61,12 +61,12 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="verify_Add_Roles_page_title" classname="com.buffalocart.test.AddRolesTestPage" time="16.212">
+  <testcase name="verify_Add_Roles_page_title" classname="com.buffalocart.test.AddRolesTestPage" time="15.89">
     <system-out><![CDATA[Directory already exists: C:\Users\USER\IdeaProjects\buffalocart\TestReport
 ExtentReport Path for WINDOWS: C:\Users\USER\IdeaProjects\buffalocart\TestReport
 
-testmail9@gmail.com
-testmail955@gmail.com
+testmail51@gmail.com
+testmail105@gmail.com
 Directory already exists: C:\Users\USER\IdeaProjects\buffalocart\TestReport
 ExtentReport Path for WINDOWS: C:\Users\USER\IdeaProjects\buffalocart\TestReport
 
@@ -78,190 +78,190 @@ verify_Add_Roles_page_title passed!
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
 ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
-Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 64740
+Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 62047
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-May 06, 2022 2:51:28 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 06, 2022 3:11:14 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-May 06, 2022 2:51:28 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 06, 2022 3:11:14 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 101, so returning the closest version found: 99
-May 06, 2022 2:51:28 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 06, 2022 3:11:14 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found CDP implementation for version 101 of 99
 ]]></system-err>
   </testcase>
-  <testcase name="verify_user_can_add_roles" classname="com.buffalocart.test.AddRolesTestPage" time="21.933">
+  <testcase name="verify_user_can_add_roles" classname="com.buffalocart.test.AddRolesTestPage" time="22.387">
     <system-out><![CDATA[verify_user_can_add_roles started!
 verify_user_can_add_roles passed!
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 63785
+    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 54942
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-May 06, 2022 2:51:50 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 06, 2022 3:11:37 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-May 06, 2022 2:51:50 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 06, 2022 3:11:37 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 101, so returning the closest version found: 99
-May 06, 2022 2:51:50 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 06, 2022 3:11:37 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found CDP implementation for version 101 of 99
 ]]></system-err>
   </testcase>
-  <testcase name="verify_the_error_message_displayed_without_filling_mandatory_fields_in_add_user_form" classname="com.buffalocart.test.AddUserTestPage" time="17.117">
+  <testcase name="verify_the_error_message_displayed_without_filling_mandatory_fields_in_add_user_form" classname="com.buffalocart.test.AddUserTestPage" time="16.986">
     <system-out><![CDATA[verify_the_error_message_displayed_without_filling_mandatory_fields_in_add_user_form started!
 verify_the_error_message_displayed_without_filling_mandatory_fields_in_add_user_form passed!
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 63263
+    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 56576
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-May 06, 2022 2:52:18 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 06, 2022 3:12:05 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-May 06, 2022 2:52:18 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 06, 2022 3:12:05 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 101, so returning the closest version found: 99
-May 06, 2022 2:52:18 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 06, 2022 3:12:05 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found CDP implementation for version 101 of 99
 ]]></system-err>
   </testcase>
-  <testcase name="verify_Add_Users_page_title" classname="com.buffalocart.test.AddUserTestPage" time="15.815">
+  <testcase name="verify_Add_Users_page_title" classname="com.buffalocart.test.AddUserTestPage" time="15.8">
     <system-out><![CDATA[verify_Add_Users_page_title started!
 verify_Add_Users_page_title passed!
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 55740
+    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 49287
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-May 06, 2022 2:52:41 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 06, 2022 3:12:28 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-May 06, 2022 2:52:41 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 06, 2022 3:12:28 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 101, so returning the closest version found: 99
-May 06, 2022 2:52:41 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 06, 2022 3:12:28 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found CDP implementation for version 101 of 99
 ]]></system-err>
   </testcase>
-  <testcase name="verify_user_can_edit_the_user_details" classname="com.buffalocart.test.EditPageTest" time="21.52">
+  <testcase name="verify_user_can_edit_the_user_details" classname="com.buffalocart.test.EditPageTest" time="22.523">
     <system-out><![CDATA[verify_user_can_edit_the_user_details started!
 [homepage useraccount name, Aju Mathew, homepage title, Home - Llolll, usermanagementdatatitle, Users - Llolll, Add user - Llolll, Mr, Tinu, Wilson, Tinuwilson7654@gmail.com, 765432, 654321, 654321, 20, Noa, No matching records found, This field is required., richard, aaaaaaa, Richard Pop, Edit user - Llolll, View User - Llolll, Roles - Llolll, Add Role - Llolll, IamTheRoleName, Sales Commission Agents - Llolll, Mr, Edwin, Lucco, 9876554433, Sea Shore, Deep Street, London, 60, mr Richard  PopTT, User updated successfully, User deleted successfully, RoleNames, Role updated successfully, Role deleted successfully, Commission agent updated successfully, Commission agent deleted successfully, Commission agent added successfully, Edit Role - Llolll, User added successfully, 122948, Tinu Wilson]
 verify_user_can_edit_the_user_details passed!
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 58635
+    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 58225
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-May 06, 2022 2:53:02 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 06, 2022 3:12:50 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-May 06, 2022 2:53:02 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 06, 2022 3:12:50 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 101, so returning the closest version found: 99
-May 06, 2022 2:53:02 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 06, 2022 3:12:50 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found CDP implementation for version 101 of 99
 ]]></system-err>
   </testcase>
-  <testcase name="verify_Edit_User_page_title" classname="com.buffalocart.test.EditPageTest" time="18.176">
+  <testcase name="verify_Edit_User_page_title" classname="com.buffalocart.test.EditPageTest" time="19.537">
     <system-out><![CDATA[verify_Edit_User_page_title started!
 verify_Edit_User_page_title passed!
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 62940
+    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 53663
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-May 06, 2022 2:53:30 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 06, 2022 3:13:19 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-May 06, 2022 2:53:30 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 06, 2022 3:13:19 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 101, so returning the closest version found: 99
-May 06, 2022 2:53:30 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 06, 2022 3:13:19 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found CDP implementation for version 101 of 99
 ]]></system-err>
   </testcase>
-  <testcase name="verify_Edit_Role_page_title" classname="com.buffalocart.test.EditRolePageTest" time="17.175">
+  <testcase name="verify_Edit_Role_page_title" classname="com.buffalocart.test.EditRolePageTest" time="19.238">
     <system-out><![CDATA[verify_Edit_Role_page_title started!
 verify_Edit_Role_page_title passed!
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 57136
+    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 50403
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-May 06, 2022 2:53:54 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 06, 2022 3:13:44 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-May 06, 2022 2:53:54 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 06, 2022 3:13:44 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 101, so returning the closest version found: 99
-May 06, 2022 2:53:54 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 06, 2022 3:13:44 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found CDP implementation for version 101 of 99
 ]]></system-err>
   </testcase>
-  <testcase name="verify_user_can_update_a_role" classname="com.buffalocart.test.EditRolePageTest" time="25.153">
+  <testcase name="verify_user_can_update_a_role" classname="com.buffalocart.test.EditRolePageTest" time="27.97">
     <system-out><![CDATA[verify_user_can_update_a_role started!
 verify_user_can_update_a_role passed!
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 49469
+    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 64542
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-May 06, 2022 2:54:17 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 06, 2022 3:14:10 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-May 06, 2022 2:54:17 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 06, 2022 3:14:10 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 101, so returning the closest version found: 99
-May 06, 2022 2:54:17 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 06, 2022 3:14:10 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found CDP implementation for version 101 of 99
 ]]></system-err>
   </testcase>
-  <testcase name="verify_Loginpage_Title" classname="com.buffalocart.test.LoginPageTest" time="0.017">
+  <testcase name="verify_Loginpage_Title" classname="com.buffalocart.test.LoginPageTest" time="0.034">
     <system-out><![CDATA[verify_Loginpage_Title started!
 verify_Loginpage_Title passed!
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 64942
+    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 53737
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-May 06, 2022 2:54:48 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 06, 2022 3:14:46 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-May 06, 2022 2:54:48 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 06, 2022 3:14:46 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 101, so returning the closest version found: 99
-May 06, 2022 2:54:48 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 06, 2022 3:14:46 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found CDP implementation for version 101 of 99
 ]]></system-err>
   </testcase>
-  <testcase name="verify_user_login_with_valid_user_credentials" classname="com.buffalocart.test.LoginPageTest" time="5.248">
+  <testcase name="verify_user_login_with_valid_user_credentials" classname="com.buffalocart.test.LoginPageTest" time="5.702">
     <system-out><![CDATA[verify_user_login_with_valid_user_credentials started!
 verify_user_login_with_valid_user_credentials passed!
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 52265
+    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 55963
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-May 06, 2022 2:54:55 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 06, 2022 3:14:52 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-May 06, 2022 2:54:55 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 06, 2022 3:14:52 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 101, so returning the closest version found: 99
-May 06, 2022 2:54:55 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 06, 2022 3:14:52 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found CDP implementation for version 101 of 99
 ]]></system-err>
   </testcase>
-  <testcase name="verify_whether_the_user_is_able_to_click_on_Remember_me_checkbox" classname="com.buffalocart.test.LoginPageTest" time="0.152">
+  <testcase name="verify_whether_the_user_is_able_to_click_on_Remember_me_checkbox" classname="com.buffalocart.test.LoginPageTest" time="0.15">
     <system-out><![CDATA[verify_whether_the_user_is_able_to_click_on_Remember_me_checkbox started!
 verify_whether_the_user_is_able_to_click_on_Remember_me_checkbox passed!
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 60236
+    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 53372
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-May 06, 2022 2:55:07 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 06, 2022 3:15:04 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-May 06, 2022 2:55:07 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 06, 2022 3:15:05 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 101, so returning the closest version found: 99
-May 06, 2022 2:55:07 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 06, 2022 3:15:05 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found CDP implementation for version 101 of 99
 ]]></system-err>
   </testcase>
-  <testcase name="verify_user_login_with_newly_added_user" classname="com.buffalocart.test.LoginPageTest" time="1.824">
-    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;a[class=&apos;dropdown-toggle&apos;]&gt;span&quot;}&#10;  (Session info: chrome=101.0.4951.54)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: &apos;4.1.3&apos;, revision: &apos;7b1ebf28ef&apos;&#10;System info: host: &apos;LAPTOP-V0HJLHIK&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [d4300a2cb366f2570dceff196f8b36da, findElement {using=css selector, value=a[class=&apos;dropdown-toggle&apos;]&gt;span}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\USER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:56274}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56274/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: d4300a2cb366f2570dceff196f8b36da" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+  <testcase name="verify_user_login_with_newly_added_user" classname="com.buffalocart.test.LoginPageTest" time="1.679">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;a[class=&apos;dropdown-toggle&apos;]&gt;span&quot;}&#10;  (Session info: chrome=101.0.4951.54)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: &apos;4.1.3&apos;, revision: &apos;7b1ebf28ef&apos;&#10;System info: host: &apos;LAPTOP-V0HJLHIK&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [11b0d428c0510f5b1e5553ce64b58e82, findElement {using=css selector, value=a[class=&apos;dropdown-toggle&apos;]&gt;span}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\USER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57715}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57715/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 11b0d428c0510f5b1e5553ce64b58e82" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
 no such element: Unable to locate element: {"method":"css selector","selector":"a[class='dropdown-toggle']>span"}
   (Session info: chrome=101.0.4951.54)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.1.3', revision: '7b1ebf28ef'
 System info: host: 'LAPTOP-V0HJLHIK', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d4300a2cb366f2570dceff196f8b36da, findElement {using=css selector, value=a[class='dropdown-toggle']>span}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\USER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:56274}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56274/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d4300a2cb366f2570dceff196f8b36da
+Command: [11b0d428c0510f5b1e5553ce64b58e82, findElement {using=css selector, value=a[class='dropdown-toggle']>span}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\USER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57715}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57715/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 11b0d428c0510f5b1e5553ce64b58e82
 	at com.buffalocart.test.LoginPageTest.verify_user_login_with_newly_added_user(LoginPageTest.java:99)
 ]]></failure>
     <system-out><![CDATA[verify_user_login_with_newly_added_user started!
@@ -269,322 +269,310 @@ Session ID: d4300a2cb366f2570dceff196f8b36da
 [homepage useraccount name, Aju Mathew, homepage title, Home - Llolll, usermanagementdatatitle, Users - Llolll, Add user - Llolll, Mr, Tinu, Wilson, Tinuwilson7654@gmail.com, 765432, 654321, 654321, 20, Noa, No matching records found, This field is required., richard, aaaaaaa, Richard Pop, Edit user - Llolll, View User - Llolll, Roles - Llolll, Add Role - Llolll, IamTheRoleName, Sales Commission Agents - Llolll, Mr, Edwin, Lucco, 9876554433, Sea Shore, Deep Street, London, 60, mr Richard  PopTT, User updated successfully, User deleted successfully, RoleNames, Role updated successfully, Role deleted successfully, Commission agent updated successfully, Commission agent deleted successfully, Commission agent added successfully, Edit Role - Llolll, User added successfully, 122948, Tinu Wilson]
 verify_user_login_with_newly_added_user failed!
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 59837
+    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 59350
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-May 06, 2022 2:55:14 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 06, 2022 3:15:13 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-May 06, 2022 2:55:14 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 06, 2022 3:15:13 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 101, so returning the closest version found: 99
-May 06, 2022 2:55:14 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 06, 2022 3:15:13 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found CDP implementation for version 101 of 99
 ]]></system-err>
   </testcase>
-  <testcase name="verify_home_page_tilte" classname="com.buffalocart.test.MyAccountPageTest" time="4.514">
+  <testcase name="verify_home_page_tilte" classname="com.buffalocart.test.MyAccountPageTest" time="5.103">
     <system-out><![CDATA[verify_home_page_tilte started!
 verify_home_page_tilte passed!
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 50850
+    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 55561
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-May 06, 2022 2:55:23 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 06, 2022 3:15:23 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-May 06, 2022 2:55:23 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 06, 2022 3:15:23 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 101, so returning the closest version found: 99
-May 06, 2022 2:55:23 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 06, 2022 3:15:23 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found CDP implementation for version 101 of 99
 ]]></system-err>
   </testcase>
-  <testcase name="Verify_date_displeyed_in_home_page" classname="com.buffalocart.test.MyAccountPageTest" time="4.85">
+  <testcase name="Verify_date_displeyed_in_home_page" classname="com.buffalocart.test.MyAccountPageTest" time="4.901">
     <system-out><![CDATA[Verify_date_displeyed_in_home_page started!
 Verify_date_displeyed_in_home_page passed!
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 60185
+    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 54330
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-May 06, 2022 2:55:34 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 06, 2022 3:15:35 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-May 06, 2022 2:55:34 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 06, 2022 3:15:35 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 101, so returning the closest version found: 99
-May 06, 2022 2:55:34 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 06, 2022 3:15:35 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found CDP implementation for version 101 of 99
 ]]></system-err>
   </testcase>
-  <testcase name="Verify_whether_user_is_navigating_to_login_page_by_clicking_on_Sign_out_button" classname="com.buffalocart.test.MyAccountPageTest" time="6.427">
+  <testcase name="Verify_whether_user_is_navigating_to_login_page_by_clicking_on_Sign_out_button" classname="com.buffalocart.test.MyAccountPageTest" time="6.284">
     <system-out><![CDATA[Verify_whether_user_is_navigating_to_login_page_by_clicking_on_Sign_out_button started!
 Verify_whether_user_is_navigating_to_login_page_by_clicking_on_Sign_out_button passed!
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 54427
+    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 53449
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-May 06, 2022 2:55:45 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 06, 2022 3:15:47 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-May 06, 2022 2:55:45 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 06, 2022 3:15:47 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 101, so returning the closest version found: 99
-May 06, 2022 2:55:45 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 06, 2022 3:15:47 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found CDP implementation for version 101 of 99
 ]]></system-err>
   </testcase>
-  <testcase name="Verify_the_Usermanagement_sub_tabs" classname="com.buffalocart.test.MyAccountPageTest" time="5.284">
+  <testcase name="Verify_the_Usermanagement_sub_tabs" classname="com.buffalocart.test.MyAccountPageTest" time="5.003">
     <system-out><![CDATA[Verify_the_Usermanagement_sub_tabs started!
 Verify_the_Usermanagement_sub_tabs passed!
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 63086
+    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 64589
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-May 06, 2022 2:55:59 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 06, 2022 3:16:00 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-May 06, 2022 2:55:59 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 06, 2022 3:16:00 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 101, so returning the closest version found: 99
-May 06, 2022 2:55:59 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 06, 2022 3:16:00 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found CDP implementation for version 101 of 99
 ]]></system-err>
   </testcase>
-  <testcase name="verify_error_message_displyed_on_Reset_Password_page_with_invalid_email_id" classname="com.buffalocart.test.ResetPasswordPageTest" time="2.429">
+  <testcase name="verify_error_message_displyed_on_Reset_Password_page_with_invalid_email_id" classname="com.buffalocart.test.ResetPasswordPageTest" time="2.334">
     <system-out><![CDATA[verify_error_message_displyed_on_Reset_Password_page_with_invalid_email_id started!
 [username, password, title, invalidcredential error message, forgot error, invalid password, admin, 123456, Login - Demo POS, These credentials do not match our records., We can't find a user with that e-mail address., 4444]
 verify_error_message_displyed_on_Reset_Password_page_with_invalid_email_id passed!
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 58250
+    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 64358
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-May 06, 2022 2:56:11 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 06, 2022 3:16:12 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-May 06, 2022 2:56:11 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 06, 2022 3:16:12 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 101, so returning the closest version found: 99
-May 06, 2022 2:56:11 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 06, 2022 3:16:12 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found CDP implementation for version 101 of 99
 ]]></system-err>
   </testcase>
-  <testcase name="verify_Roles_page_title" classname="com.buffalocart.test.RolesPageTest" time="12.564">
+  <testcase name="verify_Roles_page_title" classname="com.buffalocart.test.RolesPageTest" time="11.931">
     <system-out><![CDATA[verify_Roles_page_title started!
 verify_Roles_page_title passed!
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 63892
+    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 51176
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-May 06, 2022 2:56:22 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 06, 2022 3:16:24 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-May 06, 2022 2:56:22 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 06, 2022 3:16:24 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 101, so returning the closest version found: 99
-May 06, 2022 2:56:22 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 06, 2022 3:16:24 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found CDP implementation for version 101 of 99
 ]]></system-err>
   </testcase>
-  <testcase name="verify_user_can_delete_a_role_from_the_list" classname="com.buffalocart.test.RolesPageTest" time="17.546">
+  <testcase name="verify_user_can_delete_a_role_from_the_list" classname="com.buffalocart.test.RolesPageTest" time="16.306">
+    <failure message="element click intercepted: Element &lt;button class=&quot;swal-button swal-button--confirm swal-button--danger&quot;&gt;...&lt;/button&gt; is not clickable at point (892, 428). Other element would receive the click: &lt;div class=&quot;swal-footer&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=101.0.4951.54)&#10;Build info: version: &apos;4.1.3&apos;, revision: &apos;7b1ebf28ef&apos;&#10;System info: host: &apos;LAPTOP-V0HJLHIK&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [eb6aa8d1283778e23c46c2f88fa9fcd8, clickElement {id=8f276a75-519e-4dc3-a838-65f82c581967}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\USER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57989}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57989/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (eb6aa8d1283778e23c46c2f88fa9fcd8)] -&gt; xpath: //button[@class=&apos;swal-button swal-button--confirm swal-button--danger&apos;]]&#10;Session ID: eb6aa8d1283778e23c46c2f88fa9fcd8" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <button class="swal-button swal-button--confirm swal-button--danger">...</button> is not clickable at point (892, 428). Other element would receive the click: <div class="swal-footer">...</div>
+  (Session info: chrome=101.0.4951.54)
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'LAPTOP-V0HJLHIK', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [eb6aa8d1283778e23c46c2f88fa9fcd8, clickElement {id=8f276a75-519e-4dc3-a838-65f82c581967}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\USER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57989}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57989/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (eb6aa8d1283778e23c46c2f88fa9fcd8)] -> xpath: //button[@class='swal-button swal-button--confirm swal-button--danger']]
+Session ID: eb6aa8d1283778e23c46c2f88fa9fcd8
+	at com.buffalocart.test.RolesPageTest.verify_user_can_delete_a_role_from_the_list(RolesPageTest.java:85)
+]]></failure>
     <system-out><![CDATA[verify_user_can_delete_a_role_from_the_list started!
-verify_user_can_delete_a_role_from_the_list passed!
+verify_user_can_delete_a_role_from_the_list failed!
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 58617
+    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 50423
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-May 06, 2022 2:56:48 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 06, 2022 3:16:43 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-May 06, 2022 2:56:48 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 06, 2022 3:16:43 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 101, so returning the closest version found: 99
-May 06, 2022 2:56:48 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 06, 2022 3:16:43 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found CDP implementation for version 101 of 99
 ]]></system-err>
   </testcase>
-  <testcase name="verify_Sales_Commission_Agents_page_title" classname="com.buffalocart.test.SalesCommissionAgentPageTest" time="11.66">
+  <testcase name="verify_Sales_Commission_Agents_page_title" classname="com.buffalocart.test.SalesCommissionAgentPageTest" time="12.426">
     <system-out><![CDATA[verify_Sales_Commission_Agents_page_title started!
 verify_Sales_Commission_Agents_page_title passed!
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 52569
+    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 63545
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-May 06, 2022 2:57:12 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 06, 2022 3:17:06 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-May 06, 2022 2:57:12 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 06, 2022 3:17:06 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 101, so returning the closest version found: 99
-May 06, 2022 2:57:12 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 06, 2022 3:17:06 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found CDP implementation for version 101 of 99
 ]]></system-err>
   </testcase>
-  <testcase name="Verify_user_can_add_sales_agent" classname="com.buffalocart.test.SalesCommissionAgentPageTest" time="17.847">
+  <testcase name="Verify_user_can_add_sales_agent" classname="com.buffalocart.test.SalesCommissionAgentPageTest" time="18.735">
     <system-out><![CDATA[Verify_user_can_add_sales_agent started!
 Verify_user_can_add_sales_agent passed!
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 64838
+    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 54559
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-May 06, 2022 2:57:37 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 06, 2022 3:17:25 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-May 06, 2022 2:57:37 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 06, 2022 3:17:25 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 101, so returning the closest version found: 99
-May 06, 2022 2:57:37 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 06, 2022 3:17:25 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found CDP implementation for version 101 of 99
 ]]></system-err>
   </testcase>
-  <testcase name="verify_Edit_sales_agent_details" classname="com.buffalocart.test.SalesCommissionAgentPageTest" time="14.962">
-    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@class=&apos;btn btn-xs btn-modal btn-primary&apos;]&quot;}&#10;  (Session info: chrome=101.0.4951.54)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: &apos;4.1.3&apos;, revision: &apos;7b1ebf28ef&apos;&#10;System info: host: &apos;LAPTOP-V0HJLHIK&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [2f4a9dbb498ed397c1888b368a3e46e3, findElement {using=xpath, value=//button[@class=&apos;btn btn-xs btn-modal btn-primary&apos;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\USER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:56727}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56727/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 2f4a9dbb498ed397c1888b368a3e46e3" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+  <testcase name="verify_Edit_sales_agent_details" classname="com.buffalocart.test.SalesCommissionAgentPageTest" time="15.582">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@class=&apos;btn btn-xs btn-modal btn-primary&apos;]&quot;}&#10;  (Session info: chrome=101.0.4951.54)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: &apos;4.1.3&apos;, revision: &apos;7b1ebf28ef&apos;&#10;System info: host: &apos;LAPTOP-V0HJLHIK&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [e11a80b296f4717fd75c5c3615792a70, findElement {using=xpath, value=//button[@class=&apos;btn btn-xs btn-modal btn-primary&apos;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\USER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58190}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58190/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: e11a80b296f4717fd75c5c3615792a70" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
 no such element: Unable to locate element: {"method":"xpath","selector":"//button[@class='btn btn-xs btn-modal btn-primary']"}
   (Session info: chrome=101.0.4951.54)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.1.3', revision: '7b1ebf28ef'
 System info: host: 'LAPTOP-V0HJLHIK', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2f4a9dbb498ed397c1888b368a3e46e3, findElement {using=xpath, value=//button[@class='btn btn-xs btn-modal btn-primary']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\USER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:56727}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56727/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 2f4a9dbb498ed397c1888b368a3e46e3
+Command: [e11a80b296f4717fd75c5c3615792a70, findElement {using=xpath, value=//button[@class='btn btn-xs btn-modal btn-primary']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\USER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58190}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58190/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e11a80b296f4717fd75c5c3615792a70
 	at com.buffalocart.test.SalesCommissionAgentPageTest.verify_Edit_sales_agent_details(SalesCommissionAgentPageTest.java:127)
 ]]></failure>
     <system-out><![CDATA[verify_Edit_sales_agent_details started!
 verify_Edit_sales_agent_details failed!
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 59034
+    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 59052
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-May 06, 2022 2:58:02 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 06, 2022 3:17:51 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-May 06, 2022 2:58:02 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 06, 2022 3:17:51 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 101, so returning the closest version found: 99
-May 06, 2022 2:58:02 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 06, 2022 3:17:51 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found CDP implementation for version 101 of 99
 ]]></system-err>
   </testcase>
-  <testcase name="verify_user_can_delete_a_Sales_Commission_Agents" classname="com.buffalocart.test.SalesCommissionAgentPageTest" time="14.215">
-    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@class=&apos;btn btn-xs btn-modal btn-primary&apos;]/following-sibling::button&quot;}&#10;  (Session info: chrome=101.0.4951.54)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: &apos;4.1.3&apos;, revision: &apos;7b1ebf28ef&apos;&#10;System info: host: &apos;LAPTOP-V0HJLHIK&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [80b941d6625609be3b2e519b26a6e653, findElement {using=xpath, value=//button[@class=&apos;btn btn-xs btn-modal btn-primary&apos;]/following-sibling::button}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\USER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:56778}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56778/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 80b941d6625609be3b2e519b26a6e653" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//button[@class='btn btn-xs btn-modal btn-primary']/following-sibling::button"}
-  (Session info: chrome=101.0.4951.54)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.3', revision: '7b1ebf28ef'
-System info: host: 'LAPTOP-V0HJLHIK', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [80b941d6625609be3b2e519b26a6e653, findElement {using=xpath, value=//button[@class='btn btn-xs btn-modal btn-primary']/following-sibling::button}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\USER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:56778}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56778/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 80b941d6625609be3b2e519b26a6e653
-	at com.buffalocart.test.SalesCommissionAgentPageTest.verify_user_can_delete_a_Sales_Commission_Agents(SalesCommissionAgentPageTest.java:177)
-]]></failure>
+  <testcase name="verify_user_can_delete_a_Sales_Commission_Agents" classname="com.buffalocart.test.SalesCommissionAgentPageTest" time="20.741">
     <system-out><![CDATA[verify_user_can_delete_a_Sales_Commission_Agents started!
-verify_user_can_delete_a_Sales_Commission_Agents failed!
+verify_user_can_delete_a_Sales_Commission_Agents passed!
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 60449
+    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 60844
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-May 06, 2022 2:58:24 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 06, 2022 3:18:14 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-May 06, 2022 2:58:24 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 06, 2022 3:18:14 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 101, so returning the closest version found: 99
-May 06, 2022 2:58:24 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 06, 2022 3:18:14 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found CDP implementation for version 101 of 99
 ]]></system-err>
   </testcase>
-  <testcase name="verify_Users_page_title" classname="com.buffalocart.test.UserPageTest" time="11.19">
+  <testcase name="verify_Users_page_title" classname="com.buffalocart.test.UserPageTest" time="12.047">
     <system-out><![CDATA[verify_Users_page_title started!
 verify_Users_page_title passed!
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 61116
+    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 56581
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-May 06, 2022 2:58:45 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 06, 2022 3:18:41 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-May 06, 2022 2:58:45 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 06, 2022 3:18:41 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 101, so returning the closest version found: 99
-May 06, 2022 2:58:45 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 06, 2022 3:18:41 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found CDP implementation for version 101 of 99
 ]]></system-err>
   </testcase>
-  <testcase name="verify_user_search_with_valid_data" classname="com.buffalocart.test.UserPageTest" time="14.225">
+  <testcase name="verify_user_search_with_valid_data" classname="com.buffalocart.test.UserPageTest" time="14.705">
     <system-out><![CDATA[verify_user_search_with_valid_data started!
 [homepage useraccount name, Aju Mathew, homepage title, Home - Llolll, usermanagementdatatitle, Users - Llolll, Add user - Llolll, Mr, Tinu, Wilson, Tinuwilson7654@gmail.com, 765432, 654321, 654321, 20, Noa, No matching records found, This field is required., richard, aaaaaaa, Richard Pop, Edit user - Llolll, View User - Llolll, Roles - Llolll, Add Role - Llolll, IamTheRoleName, Sales Commission Agents - Llolll, Mr, Edwin, Lucco, 9876554433, Sea Shore, Deep Street, London, 60, mr Richard  PopTT, User updated successfully, User deleted successfully, RoleNames, Role updated successfully, Role deleted successfully, Commission agent updated successfully, Commission agent deleted successfully, Commission agent added successfully, Edit Role - Llolll, User added successfully, 122948, Tinu Wilson]
 verify_user_search_with_valid_data passed!
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 55007
+    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 52003
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-May 06, 2022 2:59:03 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 06, 2022 3:18:59 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-May 06, 2022 2:59:03 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 06, 2022 3:19:00 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 101, so returning the closest version found: 99
-May 06, 2022 2:59:03 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 06, 2022 3:19:00 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found CDP implementation for version 101 of 99
 ]]></system-err>
   </testcase>
-  <testcase name="verify_message_displayed_by_user_search_with_invalid_data" classname="com.buffalocart.test.UserPageTest" time="15.334">
+  <testcase name="verify_message_displayed_by_user_search_with_invalid_data" classname="com.buffalocart.test.UserPageTest" time="15.922">
     <system-out><![CDATA[verify_message_displayed_by_user_search_with_invalid_data started!
 verify_message_displayed_by_user_search_with_invalid_data passed!
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 63296
+    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 50135
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-May 06, 2022 2:59:24 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 06, 2022 3:19:21 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-May 06, 2022 2:59:24 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 06, 2022 3:19:21 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 101, so returning the closest version found: 99
-May 06, 2022 2:59:24 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 06, 2022 3:19:21 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found CDP implementation for version 101 of 99
 ]]></system-err>
   </testcase>
-  <testcase name="verify_user_can_delete_a_user" classname="com.buffalocart.test.UserPageTest" time="17.318">
-    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div[class=&apos;toast-message&apos;]&quot;}&#10;  (Session info: chrome=101.0.4951.54)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: &apos;4.1.3&apos;, revision: &apos;7b1ebf28ef&apos;&#10;System info: host: &apos;LAPTOP-V0HJLHIK&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [b6469cd2d271f3b3ca421277b1f70372, findElement {using=css selector, value=div[class=&apos;toast-message&apos;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\USER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:56960}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56960/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: b6469cd2d271f3b3ca421277b1f70372" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"css selector","selector":"div[class='toast-message']"}
-  (Session info: chrome=101.0.4951.54)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.3', revision: '7b1ebf28ef'
-System info: host: 'LAPTOP-V0HJLHIK', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b6469cd2d271f3b3ca421277b1f70372, findElement {using=css selector, value=div[class='toast-message']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\USER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:56960}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56960/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b6469cd2d271f3b3ca421277b1f70372
-	at com.buffalocart.test.UserPageTest.verify_user_can_delete_a_user(UserPageTest.java:171)
-]]></failure>
+  <testcase name="verify_user_can_delete_a_user" classname="com.buffalocart.test.UserPageTest" time="18.372">
     <system-out><![CDATA[verify_user_can_delete_a_user started!
-verify_user_can_delete_a_user failed!
+verify_user_can_delete_a_user passed!
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 63955
+    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 59356
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-May 06, 2022 2:59:47 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 06, 2022 3:19:44 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-May 06, 2022 2:59:47 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 06, 2022 3:19:44 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 101, so returning the closest version found: 99
-May 06, 2022 2:59:47 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 06, 2022 3:19:44 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found CDP implementation for version 101 of 99
 ]]></system-err>
   </testcase>
-  <testcase name="verify_the_details_displayed_on_view_user_page" classname="com.buffalocart.test.ViewPageTest" time="14.093">
-    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@class=&apos;btn btn-xs btn-info&apos;]&quot;}&#10;  (Session info: chrome=101.0.4951.54)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: &apos;4.1.3&apos;, revision: &apos;7b1ebf28ef&apos;&#10;System info: host: &apos;LAPTOP-V0HJLHIK&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [39e165667d64d6f38488219abdab396d, findElement {using=xpath, value=//a[@class=&apos;btn btn-xs btn-info&apos;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\USER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57010}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57010/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 39e165667d64d6f38488219abdab396d" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+  <testcase name="verify_the_details_displayed_on_view_user_page" classname="com.buffalocart.test.ViewPageTest" time="15.154">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@class=&apos;btn btn-xs btn-info&apos;]&quot;}&#10;  (Session info: chrome=101.0.4951.54)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: &apos;4.1.3&apos;, revision: &apos;7b1ebf28ef&apos;&#10;System info: host: &apos;LAPTOP-V0HJLHIK&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [5d7a018814ba11a48513c5f5ab1eb6e7, findElement {using=xpath, value=//a[@class=&apos;btn btn-xs btn-info&apos;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\USER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58498}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58498/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 5d7a018814ba11a48513c5f5ab1eb6e7" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
 no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='btn btn-xs btn-info']"}
   (Session info: chrome=101.0.4951.54)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.1.3', revision: '7b1ebf28ef'
 System info: host: 'LAPTOP-V0HJLHIK', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [39e165667d64d6f38488219abdab396d, findElement {using=xpath, value=//a[@class='btn btn-xs btn-info']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\USER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57010}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57010/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 39e165667d64d6f38488219abdab396d
+Command: [5d7a018814ba11a48513c5f5ab1eb6e7, findElement {using=xpath, value=//a[@class='btn btn-xs btn-info']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\USER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58498}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58498/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5d7a018814ba11a48513c5f5ab1eb6e7
 	at com.buffalocart.test.ViewPageTest.verify_the_details_displayed_on_view_user_page(ViewPageTest.java:56)
 ]]></failure>
     <system-out><![CDATA[verify_the_details_displayed_on_view_user_page started!
 [homepage useraccount name, Aju Mathew, homepage title, Home - Llolll, usermanagementdatatitle, Users - Llolll, Add user - Llolll, Mr, Tinu, Wilson, Tinuwilson7654@gmail.com, 765432, 654321, 654321, 20, Noa, No matching records found, This field is required., richard, aaaaaaa, Richard Pop, Edit user - Llolll, View User - Llolll, Roles - Llolll, Add Role - Llolll, IamTheRoleName, Sales Commission Agents - Llolll, Mr, Edwin, Lucco, 9876554433, Sea Shore, Deep Street, London, 60, mr Richard  PopTT, User updated successfully, User deleted successfully, RoleNames, Role updated successfully, Role deleted successfully, Commission agent updated successfully, Commission agent deleted successfully, Commission agent added successfully, Edit Role - Llolll, User added successfully, 122948, Tinu Wilson]
 verify_the_details_displayed_on_view_user_page failed!
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 58926
+    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 57185
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-May 06, 2022 3:00:11 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 06, 2022 3:20:09 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-May 06, 2022 3:00:11 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 06, 2022 3:20:09 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 101, so returning the closest version found: 99
-May 06, 2022 3:00:11 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 06, 2022 3:20:09 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found CDP implementation for version 101 of 99
 ]]></system-err>
   </testcase>

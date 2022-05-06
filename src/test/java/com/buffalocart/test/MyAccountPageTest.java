@@ -100,13 +100,5 @@ public class MyAccountPageTest extends Base {
         acc.clickOnEndTour();
         extentTest.get().log(Status.PASS, "End Tour Button Clicked successfully");
         acc.clickOnUserManagement();
-        /*List<String> actualSubListOfManagement=new ArrayList<>();
-        actualSubListOfManagement.
-        List<String> expectedSubListOfManagement=new ArrayList<>();
-        expectedSubListOfManagement.add("Users");
-        expectedSubListOfManagement.add("Roles");
-        expectedSubListOfManagement.add("Sales Commission Agents");
-        System.out.println(expectedSubListOfManagement);
-        Assert.assertEquals(actualSubListOfManagement,expectedSubListOfManagement,"invalid data");*/
     }
 }

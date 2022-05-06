@@ -20,7 +20,7 @@ public class EditPageTest extends Base {
     ExcelUtility excel = new ExcelUtility();
     ThreadLocal<ExtentTest> extentTest = TestListener.getTestInstance();
 
-    @Test(priority = 17, enabled = true, description = "TC_017_Verify Edit User page title")
+    @Test(priority = 18, enabled = true, description = "TC_018_Verify Edit User page title")
     public void verify_Edit_User_page_title() {
         login = new LoginPage(driver);
         extentTest.get().assignCategory("Regression");
@@ -43,7 +43,7 @@ public class EditPageTest extends Base {
         user = new UserPage(driver);
         user = acc.clickOnUsersLink();
         extentTest.get().log(Status.PASS, "Users link Clicked successfully");
-        user.searchUser("richard");
+        user.searchUser("Tinu");
         extentTest.get().log(Status.PASS, "Name searched successfully");
         try {
             Thread.sleep(3000);
@@ -57,7 +57,7 @@ public class EditPageTest extends Base {
         Assert.assertEquals(actualEditPageTitle,expectedEditPageTitle,"Invalid message");
     }
 
-    @Test(priority = 18, enabled = true, description = "TC_018_Verify  user can edit the user details  ")
+    @Test(priority = 17, enabled = true, description = "TC_017_Verify  user can edit the user details  ")
     public void verify_user_can_edit_the_user_details() {
         login = new LoginPage(driver);
         extentTest.get().assignCategory("Regression");
@@ -83,13 +83,13 @@ public class EditPageTest extends Base {
         userPage = new AddUserPage(driver);
         List<String> listForEdit = excel.readDataFromExcel("AccountPage");
         System.out.println(listForEdit);
-        userPage.searchUser(listForEdit.get(18));
+        userPage.searchUser(listForEdit.get(8));
+        extentTest.get().log(Status.PASS, "Name searched successfully");
         try {
             Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        extentTest.get().log(Status.PASS, "Name searched successfully");
         edit = user.clickOnEditButton();
         extentTest.get().log(Status.PASS, "Edit button clicked successfully");
         userPage.enterPassword("aaaaaaa");

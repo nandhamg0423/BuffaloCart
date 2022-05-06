@@ -26,36 +26,36 @@ public class EditRolePageTest extends Base {
     @Test(priority = 24, enabled = true, description = "TC_024_ Verify Edit Role page title")
     public void verify_Edit_Role_page_title() {
         login = new LoginPage(driver);
-        //extentTest.get().assignCategory("Regression");
+        extentTest.get().assignCategory("Regression");
         List<String> list = excel.readDataFromExcel("LoginPage");
         login.enterUsername(list.get(6));
-        //extentTest.get().log(Status.PASS, "Username entered successfully");
+        extentTest.get().log(Status.PASS, "Username entered successfully");
         login.enterPassword(list.get(7));
-        //extentTest.get().log(Status.PASS, "Password entered successfully");
+        extentTest.get().log(Status.PASS, "Password entered successfully");
         acc = login.clickOnloginButton();
-        //extentTest.get().log(Status.PASS, "Login Button Clicked successfully");
+        extentTest.get().log(Status.PASS, "Login Button Clicked successfully");
         acc.clickOnEndTour();
-        //extentTest.get().log(Status.PASS, "End Tour Button Clicked successfully");
+        extentTest.get().log(Status.PASS, "End Tour Button Clicked successfully");
         acc.clickOnUserManagement();
         try {
             Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        //extentTest.get().log(Status.PASS, "User Management Clicked successfully");
+        extentTest.get().log(Status.PASS, "User Management Clicked successfully");
         role=new RolesPage(driver);
         role = acc.clickOnRoleLink();
-        //extentTest.get().log(Status.PASS, "Users Clicked successfully");
+        extentTest.get().log(Status.PASS, "Users Clicked successfully");
         List<String> list1 = excel.readDataFromExcel("AccountPage");
         role.searchRole(list1.get(36));
-        //extentTest.get().log(Status.PASS, "Role searched successfully");
+        extentTest.get().log(Status.PASS, "Role searched successfully");
         try {
             Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
         editrolepage=role.clickOnEditRolesButton();
-        //extentTest.get().log(Status.PASS, "Edit button on role page clicked successfully");
+        extentTest.get().log(Status.PASS, "Edit button on role page clicked successfully");
         String actualEditRolePage= editrolepage.getEditRolePageTitle();
         String expectedEditRolePage=list1.get(42);
         Assert.assertEquals(actualEditRolePage,expectedEditRolePage,"invalid message");
@@ -86,7 +86,7 @@ public class EditRolePageTest extends Base {
         extentTest.get().log(Status.PASS, "Users Clicked successfully");
         List<String> list1 = excel.readDataFromExcel("AccountPage");
         role.searchRole(list1.get(36));
-        //extentTest.get().log(Status.PASS, "Role searched successfully");
+        extentTest.get().log(Status.PASS, "Role searched successfully");
         try {
             Thread.sleep(3000);
         } catch (InterruptedException e) {

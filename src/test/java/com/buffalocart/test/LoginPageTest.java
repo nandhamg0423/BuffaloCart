@@ -89,7 +89,8 @@ public class LoginPageTest extends Base {
         extentTest.get().assignCategory("Regression");
         List<String> list = excel.readDataFromExcel("AccountPage");
         System.out.println(list);
-        login.enterUsername(list.get(18));
+        System.out.println(list);
+        login.enterUsername(list.get(12));
         extentTest.get().log(Status.PASS, "Registered username entered successfully");
         login.enterPassword(list.get(19));
         extentTest.get().log(Status.PASS, "Registered Password entered successfully");
@@ -97,7 +98,7 @@ public class LoginPageTest extends Base {
         extentTest.get().log(Status.PASS, "Login Button Clicked successfully");
         String actualUserAccountTitle = acc.getUserAccountName();
         List<String> homepageTitleList = excel.readDataFromExcel("AccountPage");
-        String expectedUserAccountTitle = homepageTitleList.get(20);
+        String expectedUserAccountTitle = homepageTitleList.get(45);
         Assert.assertEquals(actualUserAccountTitle, expectedUserAccountTitle, "Invalid UserAccount Name");
     }
 }

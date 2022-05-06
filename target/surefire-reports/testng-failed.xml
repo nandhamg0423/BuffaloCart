@@ -10,14 +10,30 @@
         <methods>
           <include name="setUp"/>
           <include name="verify_user_can_delete_a_Sales_Commission_Agents"/>
+          <include name="verify_Edit_sales_agent_details"/>
           <include name="setExtent"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.buffalocart.test.SalesCommissionAgentPageTest -->
+      <class name="com.buffalocart.test.LoginPageTest">
+        <methods>
+          <include name="setExtent"/>
+          <include name="setUp"/>
+          <include name="verify_user_login_with_newly_added_user"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.buffalocart.test.LoginPageTest -->
+      <class name="com.buffalocart.test.ViewPageTest">
+        <methods>
+          <include name="verify_the_details_displayed_on_view_user_page"/>
+          <include name="setExtent"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.buffalocart.test.ViewPageTest -->
       <class name="com.buffalocart.test.UserPageTest">
         <methods>
           <include name="verify_user_can_delete_a_user"/>
-          <include name="verify_user_search_with_valid_data"/>
           <include name="setUp"/>
           <include name="setExtent"/>
           <include name="tearDown"/>

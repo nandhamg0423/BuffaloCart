@@ -167,7 +167,7 @@ public class SalesCommissionAgentPageTest extends Base {
         }
         salescommision = acc.clickOnSalesCommissionLink();
         extentTest.get().log(Status.PASS, "SalesCommissionAgentPage Clicked successfully");
-        salescommision.enterOnSearch("Delete");
+        salescommision.enterOnSearch("delete");
         extentTest.get().log(Status.PASS, "Name entered on search field successfully");
         try {
             Thread.sleep(3000);

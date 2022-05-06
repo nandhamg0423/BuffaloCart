@@ -23,7 +23,7 @@ public class AddRolesTestPage extends Base {
     ExcelUtility excel = new ExcelUtility();
     ThreadLocal<ExtentTest> extentTest = TestListener.getTestInstance();
 
-    @Test(priority = 22, enabled = true, description = "TC_022_ VVerify Add Roles page title ")
+    @Test(priority = 22, enabled = true, description = "TC_0220_ VVerify Add Roles page title ")
     public void verify_Add_Roles_page_title() {
         login = new LoginPage(driver);
         extentTest.get().assignCategory("Regression");
@@ -81,7 +81,7 @@ public class AddRolesTestPage extends Base {
         addrole = role.clickOnAddRolesButton();
         extentTest.get().log(Status.PASS, "Add roles Clicked successfully");
         List<String> listForRoleName = excel.readDataFromExcel("AccountPage");
-        addrole.enterRoleName(listForRoleName.get(25));
+        addrole.enterRoleName(listForRoleName.get(36));
         addrole.clickOnSaveButton();
         extentTest.get().log(Status.PASS, "Save Button Clicked successfully");
         List<String> listForUsers = excel.readDataFromExcel("AccountPage");

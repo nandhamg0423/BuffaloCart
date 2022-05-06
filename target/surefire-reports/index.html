@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">28 methods, 3 failed,   25 passed</span>
+                    <span class="method-stats">28 methods, 5 failed,   23 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,6 +102,16 @@
                       <a href="#" panel-name="suite-All_Test_Suite" class="show-methods failed suite-All_Test_Suite"> (show)</a> <!-- show-methods failed suite-All_Test_Suite -->
                     </span>
                     <div class="method-list-content failed suite-All_Test_Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="com.buffalocart.test.SalesCommissionAgentPageTest" hash-for-method="verify_Edit_sales_agent_details">verify_Edit_sales_agent_details</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="com.buffalocart.test.ViewPageTest" hash-for-method="verify_the_details_displayed_on_view_user_page">verify_the_details_displayed_on_view_user_page</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="com.buffalocart.test.SalesCommissionAgentPageTest" hash-for-method="verify_user_can_delete_a_Sales_Commission_Agents">verify_user_can_delete_a_Sales_Commission_Agents</a> <!-- method navigator-link -->
@@ -114,7 +124,7 @@
                       <br/>
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="com.buffalocart.test.UserPageTest" hash-for-method="verify_user_search_with_valid_data">verify_user_search_with_valid_data</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="com.buffalocart.test.LoginPageTest" hash-for-method="verify_user_login_with_newly_added_user">verify_user_login_with_newly_added_user</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-All_Test_Suite -->
@@ -168,11 +178,6 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="com.buffalocart.test.SalesCommissionAgentPageTest" hash-for-method="verify_Edit_sales_agent_details">verify_Edit_sales_agent_details</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="com.buffalocart.test.LoginPageTest" hash-for-method="verify_Loginpage_Title">verify_Loginpage_Title</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -208,11 +213,6 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="com.buffalocart.test.ViewPageTest" hash-for-method="verify_the_details_displayed_on_view_user_page">verify_the_details_displayed_on_view_user_page</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="com.buffalocart.test.AddUserTestPage" hash-for-method="verify_the_error_message_displayed_without_filling_mandatory_fields_in_add_user_form">verify_the_error_message_displayed_without_filling_mandatory_fields_in_add_user_form</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -238,12 +238,12 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="com.buffalocart.test.LoginPageTest" hash-for-method="verify_user_login_with_newly_added_user">verify_user_login_with_newly_added_user</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="com.buffalocart.test.LoginPageTest" hash-for-method="verify_user_login_with_valid_user_credentials">verify_user_login_with_valid_user_credentials</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="com.buffalocart.test.LoginPageTest" hash-for-method="verify_user_login_with_valid_user_credentials">verify_user_login_with_valid_user_credentials</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="com.buffalocart.test.UserPageTest" hash-for-method="verify_user_search_with_valid_data">verify_user_search_with_valid_data</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -271,6 +271,79 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="verify_Edit_sales_agent_details">
+                  </a> <!-- verify_Edit_sales_agent_details -->
+                  <span class="method-name">verify_Edit_sales_agent_details</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@class=&apos;btn btn-xs btn-modal btn-primary&apos;]&quot;}
+  (Session info: chrome=101.0.4951.54)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.1.3&apos;, revision: &apos;7b1ebf28ef&apos;
+System info: host: &apos;LAPTOP-V0HJLHIK&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2f4a9dbb498ed397c1888b368a3e46e3, findElement {using=xpath, value=//button[@class=&apos;btn btn-xs btn-modal btn-primary&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\USER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:56727}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56727/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2f4a9dbb498ed397c1888b368a3e46e3
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy14.click(Unknown Source)
+	at com.buffalocart.utilities.PageUtility.clickOnElement(PageUtility.java:30)
+	at com.buffalocart.pages.SalesCommissionAgentPage.clickOnSalesCommissionEditButton(SalesCommissionAgentPage.java:125)
+	at com.buffalocart.test.SalesCommissionAgentPageTest.verify_Edit_sales_agent_details(SalesCommissionAgentPageTest.java:127)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+
+</div> <!-- stack-trace -->
+                  <em>
+(TC_030_ Verify Edit sales agent details)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="verify_user_can_delete_a_Sales_Commission_Agents">
                   </a> <!-- verify_user_can_delete_a_Sales_Commission_Agents -->
                   <span class="method-name">verify_user_can_delete_a_Sales_Commission_Agents</span>
@@ -280,9 +353,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: &apos;4.1.3&apos;, revision: &apos;7b1ebf28ef&apos;
 System info: host: &apos;LAPTOP-V0HJLHIK&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7e2b7ffa952081ab3ab23c3b615e2af9, findElement {using=xpath, value=//button[@class=&apos;btn btn-xs btn-modal btn-primary&apos;]/following-sibling::button}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\USER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51809}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51809/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 7e2b7ffa952081ab3ab23c3b615e2af9
+Command: [80b941d6625609be3b2e519b26a6e653, findElement {using=xpath, value=//button[@class=&apos;btn btn-xs btn-modal btn-primary&apos;]/following-sibling::button}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\USER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:56778}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56778/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 80b941d6625609be3b2e519b26a6e653
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -347,23 +420,104 @@ Session ID: 7e2b7ffa952081ab3ab23c3b615e2af9
           <div class="suite-All_Test_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.buffalocart.test.UserPageTest</span>
+              <span class="class-name">com.buffalocart.test.LoginPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verify_user_can_delete_a_user">
-                  </a> <!-- verify_user_can_delete_a_user -->
-                  <span class="method-name">verify_user_can_delete_a_user</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@class=&apos;btn btn-xs btn-danger delete_user_button&apos;]&quot;}
+                  <a name="verify_user_login_with_newly_added_user">
+                  </a> <!-- verify_user_login_with_newly_added_user -->
+                  <span class="method-name">verify_user_login_with_newly_added_user</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;a[class=&apos;dropdown-toggle&apos;]&gt;span&quot;}
   (Session info: chrome=101.0.4951.54)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.1.3&apos;, revision: &apos;7b1ebf28ef&apos;
 System info: host: &apos;LAPTOP-V0HJLHIK&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [97bed08be99c8102db6ebb8aeb326b32, findElement {using=xpath, value=//button[@class=&apos;btn btn-xs btn-danger delete_user_button&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\USER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52075}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52075/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 97bed08be99c8102db6ebb8aeb326b32
+Command: [d4300a2cb366f2570dceff196f8b36da, findElement {using=css selector, value=a[class=&apos;dropdown-toggle&apos;]&gt;span}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\USER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:56274}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56274/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d4300a2cb366f2570dceff196f8b36da
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy14.getText(Unknown Source)
+	at com.buffalocart.utilities.PageUtility.getElementText(PageUtility.java:52)
+	at com.buffalocart.pages.MyAccountPage.getUserAccountName(MyAccountPage.java:73)
+	at com.buffalocart.test.LoginPageTest.verify_user_login_with_newly_added_user(LoginPageTest.java:99)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+
+</div> <!-- stack-trace -->
+                  <em>
+(TC_014_Verify user login with newly added user)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-failed -->
+          <div class="suite-All_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.buffalocart.test.ViewPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_the_details_displayed_on_view_user_page">
+                  </a> <!-- verify_the_details_displayed_on_view_user_page -->
+                  <span class="method-name">verify_the_details_displayed_on_view_user_page</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@class=&apos;btn btn-xs btn-info&apos;]&quot;}
+  (Session info: chrome=101.0.4951.54)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.1.3&apos;, revision: &apos;7b1ebf28ef&apos;
+System info: host: &apos;LAPTOP-V0HJLHIK&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [39e165667d64d6f38488219abdab396d, findElement {using=xpath, value=//a[@class=&apos;btn btn-xs btn-info&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\USER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57010}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57010/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 39e165667d64d6f38488219abdab396d
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -383,8 +537,89 @@ Session ID: 97bed08be99c8102db6ebb8aeb326b32
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
 	at com.sun.proxy.$Proxy14.click(Unknown Source)
 	at com.buffalocart.utilities.PageUtility.clickOnElement(PageUtility.java:30)
-	at com.buffalocart.pages.UserPage.clickOnDeleteButton(UserPage.java:83)
-	at com.buffalocart.test.UserPageTest.verify_user_can_delete_a_user(UserPageTest.java:162)
+	at com.buffalocart.pages.UserPage.clickOnViewButton(UserPage.java:87)
+	at com.buffalocart.test.ViewPageTest.verify_the_details_displayed_on_view_user_page(ViewPageTest.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+
+</div> <!-- stack-trace -->
+                  <em>
+(TC_020_Verify  the details displayed on view user page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-failed -->
+          <div class="suite-All_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.buffalocart.test.UserPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_user_can_delete_a_user">
+                  </a> <!-- verify_user_can_delete_a_user -->
+                  <span class="method-name">verify_user_can_delete_a_user</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div[class=&apos;toast-message&apos;]&quot;}
+  (Session info: chrome=101.0.4951.54)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.1.3&apos;, revision: &apos;7b1ebf28ef&apos;
+System info: host: &apos;LAPTOP-V0HJLHIK&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b6469cd2d271f3b3ca421277b1f70372, findElement {using=css selector, value=div[class=&apos;toast-message&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\USER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:56960}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56960/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b6469cd2d271f3b3ca421277b1f70372
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy14.getText(Unknown Source)
+	at com.buffalocart.utilities.PageUtility.getElementText(PageUtility.java:52)
+	at com.buffalocart.pages.UserPage.getDeletedMessage(UserPage.java:111)
+	at com.buffalocart.test.UserPageTest.verify_user_can_delete_a_user(UserPageTest.java:171)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -423,56 +658,6 @@ Session ID: 97bed08be99c8102db6ebb8aeb326b32
 (TC_019_Verify user can delete a user)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verify_user_search_with_valid_data">
-                  </a> <!-- verify_user_search_with_valid_data -->
-                  <span class="method-name">verify_user_search_with_valid_data</span>
-                  <div class="stack-trace">java.lang.AssertionError: Invalid search data expected [mr Richard Pop] but found []
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:655)
-	at com.buffalocart.test.UserPageTest.verify_user_search_with_valid_data(UserPageTest.java:86)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:808)
-	at org.testng.TestRunner.run(TestRunner.java:603)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.runSuites(TestNG.java:1092)
-	at org.testng.TestNG.run(TestNG.java:1060)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
-
-</div> <!-- stack-trace -->
-                  <em>
-(TC_011_Verify user search with valid data)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-All_Test_Suite-class-failed -->
           <div class="suite-All_Test_Suite-class-passed">
@@ -492,20 +677,37 @@ Session ID: 97bed08be99c8102db6ebb8aeb326b32
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verify_Edit_sales_agent_details">
-                  </a> <!-- verify_Edit_sales_agent_details -->
-                  <span class="method-name">verify_Edit_sales_agent_details</span>
-                  <em>
-(TC_030_ Verify Edit sales agent details)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="verify_Sales_Commission_Agents_page_title">
                   </a> <!-- verify_Sales_Commission_Agents_page_title -->
                   <span class="method-name">verify_Sales_Commission_Agents_page_title</span>
                   <em>
 (TC_028_ Verify  Sales Commission Agents page title)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.buffalocart.test.EditPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_Edit_User_page_title">
+                  </a> <!-- verify_Edit_User_page_title -->
+                  <span class="method-name">verify_Edit_User_page_title</span>
+                  <em>
+(TC_018_Verify Edit User page title)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_user_can_edit_the_user_details">
+                  </a> <!-- verify_user_can_edit_the_user_details -->
+                  <span class="method-name">verify_user_can_edit_the_user_details</span>
+                  <em>
+(TC_017_Verify  user can edit the user details  )                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -539,32 +741,6 @@ Session ID: 97bed08be99c8102db6ebb8aeb326b32
           <div class="suite-All_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.buffalocart.test.EditPageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verify_Edit_User_page_title">
-                  </a> <!-- verify_Edit_User_page_title -->
-                  <span class="method-name">verify_Edit_User_page_title</span>
-                  <em>
-(TC_017_Verify Edit User page title)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verify_user_can_edit_the_user_details">
-                  </a> <!-- verify_user_can_edit_the_user_details -->
-                  <span class="method-name">verify_user_can_edit_the_user_details</span>
-                  <em>
-(TC_018_Verify  user can edit the user details  )                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-All_Test_Suite-class-passed -->
-          <div class="suite-All_Test_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">com.buffalocart.test.LoginPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -575,15 +751,6 @@ Session ID: 97bed08be99c8102db6ebb8aeb326b32
                   <span class="method-name">verify_Loginpage_Title</span>
                   <em>
 (TC_001_Verify Login Page Title)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verify_user_login_with_newly_added_user">
-                  </a> <!-- verify_user_login_with_newly_added_user -->
-                  <span class="method-name">verify_user_login_with_newly_added_user</span>
-                  <em>
-(TC_014_Verify user login with newly added user)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -635,23 +802,6 @@ Session ID: 97bed08be99c8102db6ebb8aeb326b32
           <div class="suite-All_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.buffalocart.test.ViewPageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verify_the_details_displayed_on_view_user_page">
-                  </a> <!-- verify_the_details_displayed_on_view_user_page -->
-                  <span class="method-name">verify_the_details_displayed_on_view_user_page</span>
-                  <em>
-(TC_020_Verify  the details displayed on view user page)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-All_Test_Suite-class-passed -->
-          <div class="suite-All_Test_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">com.buffalocart.test.ResetPasswordPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -678,7 +828,7 @@ Session ID: 97bed08be99c8102db6ebb8aeb326b32
                   </a> <!-- verify_Add_Roles_page_title -->
                   <span class="method-name">verify_Add_Roles_page_title</span>
                   <em>
-(TC_022_ VVerify Add Roles page title )                  </em>
+(TC_0220_ VVerify Add Roles page title )                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -784,6 +934,15 @@ Session ID: 97bed08be99c8102db6ebb8aeb326b32
                   <span class="method-name">verify_message_displayed_by_user_search_with_invalid_data</span>
                   <em>
 (TC_012_Verify message displayed by  user search with invalid data)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_user_search_with_valid_data">
+                  </a> <!-- verify_user_search_with_valid_data -->
+                  <span class="method-name">verify_user_search_with_valid_data</span>
+                  <em>
+(TC_011_Verify user search with valid data)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -924,120 +1083,120 @@ data.addRows(28);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verify_user_can_update_a_role')
 data.setCell(0, 2, 'com.buffalocart.test.EditRolePageTest')
-data.setCell(0, 3, 27328);
+data.setCell(0, 3, 25179);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verify_user_can_edit_the_user_details')
-data.setCell(1, 2, 'com.buffalocart.test.EditPageTest')
-data.setCell(1, 3, 26599);
+data.setCell(1, 1, 'verify_user_can_add_roles')
+data.setCell(1, 2, 'com.buffalocart.test.AddRolesTestPage')
+data.setCell(1, 3, 21983);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verify_user_can_add_roles')
-data.setCell(2, 2, 'com.buffalocart.test.AddRolesTestPage')
-data.setCell(2, 3, 23121);
+data.setCell(2, 1, 'verify_user_can_edit_the_user_details')
+data.setCell(2, 2, 'com.buffalocart.test.EditPageTest')
+data.setCell(2, 3, 21534);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verify_Edit_sales_agent_details')
-data.setCell(3, 2, 'com.buffalocart.test.SalesCommissionAgentPageTest')
-data.setCell(3, 3, 22468);
+data.setCell(3, 1, 'verify_Edit_User_page_title')
+data.setCell(3, 2, 'com.buffalocart.test.EditPageTest')
+data.setCell(3, 3, 18192);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verify_the_details_displayed_on_view_user_page')
-data.setCell(4, 2, 'com.buffalocart.test.ViewPageTest')
-data.setCell(4, 3, 20383);
+data.setCell(4, 1, 'Verify_user_can_add_sales_agent')
+data.setCell(4, 2, 'com.buffalocart.test.SalesCommissionAgentPageTest')
+data.setCell(4, 3, 17863);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'verify_Edit_User_page_title')
-data.setCell(5, 2, 'com.buffalocart.test.EditPageTest')
-data.setCell(5, 3, 20041);
+data.setCell(5, 1, 'verify_user_can_delete_a_role_from_the_list')
+data.setCell(5, 2, 'com.buffalocart.test.RolesPageTest')
+data.setCell(5, 3, 17483);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'Verify_user_can_add_sales_agent')
-data.setCell(6, 2, 'com.buffalocart.test.SalesCommissionAgentPageTest')
-data.setCell(6, 3, 19706);
+data.setCell(6, 1, 'verify_user_can_delete_a_user')
+data.setCell(6, 2, 'com.buffalocart.test.UserPageTest')
+data.setCell(6, 3, 17424);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'verify_user_can_delete_a_role_from_the_list')
-data.setCell(7, 2, 'com.buffalocart.test.RolesPageTest')
-data.setCell(7, 3, 19465);
+data.setCell(7, 1, 'verify_Edit_Role_page_title')
+data.setCell(7, 2, 'com.buffalocart.test.EditRolePageTest')
+data.setCell(7, 3, 17189);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'verify_Add_Users_page_title')
+data.setCell(8, 1, 'verify_the_error_message_displayed_without_filling_mandatory_fields_in_add_user_form')
 data.setCell(8, 2, 'com.buffalocart.test.AddUserTestPage')
-data.setCell(8, 3, 19402);
+data.setCell(8, 3, 17131);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'verify_Add_Roles_page_title')
 data.setCell(9, 2, 'com.buffalocart.test.AddRolesTestPage')
-data.setCell(9, 3, 18677);
+data.setCell(9, 3, 16234);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'verify_the_error_message_displayed_without_filling_mandatory_fields_in_add_user_form')
+data.setCell(10, 1, 'verify_Add_Users_page_title')
 data.setCell(10, 2, 'com.buffalocart.test.AddUserTestPage')
-data.setCell(10, 3, 18303);
+data.setCell(10, 3, 15827);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'verify_Edit_Role_page_title')
-data.setCell(11, 2, 'com.buffalocart.test.EditRolePageTest')
-data.setCell(11, 3, 18117);
+data.setCell(11, 1, 'verify_message_displayed_by_user_search_with_invalid_data')
+data.setCell(11, 2, 'com.buffalocart.test.UserPageTest')
+data.setCell(11, 3, 15350);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'verify_user_can_delete_a_Sales_Commission_Agents')
+data.setCell(12, 1, 'verify_Edit_sales_agent_details')
 data.setCell(12, 2, 'com.buffalocart.test.SalesCommissionAgentPageTest')
-data.setCell(12, 3, 17877);
+data.setCell(12, 3, 14972);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'verify_message_displayed_by_user_search_with_invalid_data')
+data.setCell(13, 1, 'verify_user_search_with_valid_data')
 data.setCell(13, 2, 'com.buffalocart.test.UserPageTest')
-data.setCell(13, 3, 16526);
+data.setCell(13, 3, 14259);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'verify_user_can_delete_a_user')
-data.setCell(14, 2, 'com.buffalocart.test.UserPageTest')
-data.setCell(14, 3, 16507);
+data.setCell(14, 1, 'verify_user_can_delete_a_Sales_Commission_Agents')
+data.setCell(14, 2, 'com.buffalocart.test.SalesCommissionAgentPageTest')
+data.setCell(14, 3, 14227);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'verify_user_search_with_valid_data')
-data.setCell(15, 2, 'com.buffalocart.test.UserPageTest')
-data.setCell(15, 3, 15888);
+data.setCell(15, 1, 'verify_the_details_displayed_on_view_user_page')
+data.setCell(15, 2, 'com.buffalocart.test.ViewPageTest')
+data.setCell(15, 3, 14107);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'verify_Users_page_title')
-data.setCell(16, 2, 'com.buffalocart.test.UserPageTest')
-data.setCell(16, 3, 13810);
+data.setCell(16, 1, 'verify_Roles_page_title')
+data.setCell(16, 2, 'com.buffalocart.test.RolesPageTest')
+data.setCell(16, 3, 12581);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'verify_Roles_page_title')
-data.setCell(17, 2, 'com.buffalocart.test.RolesPageTest')
-data.setCell(17, 3, 12480);
+data.setCell(17, 1, 'verify_Sales_Commission_Agents_page_title')
+data.setCell(17, 2, 'com.buffalocart.test.SalesCommissionAgentPageTest')
+data.setCell(17, 3, 11671);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'verify_Sales_Commission_Agents_page_title')
-data.setCell(18, 2, 'com.buffalocart.test.SalesCommissionAgentPageTest')
-data.setCell(18, 3, 12097);
+data.setCell(18, 1, 'verify_Users_page_title')
+data.setCell(18, 2, 'com.buffalocart.test.UserPageTest')
+data.setCell(18, 3, 11201);
 data.setCell(19, 0, 19)
 data.setCell(19, 1, 'Verify_whether_user_is_navigating_to_login_page_by_clicking_on_Sign_out_button')
 data.setCell(19, 2, 'com.buffalocart.test.MyAccountPageTest')
-data.setCell(19, 3, 7213);
+data.setCell(19, 3, 6450);
 data.setCell(20, 0, 20)
-data.setCell(20, 1, 'Verify_date_displeyed_in_home_page')
-data.setCell(20, 2, 'com.buffalocart.test.MyAccountPageTest')
-data.setCell(20, 3, 5888);
+data.setCell(20, 1, 'verify_user_login_with_valid_user_credentials')
+data.setCell(20, 2, 'com.buffalocart.test.LoginPageTest')
+data.setCell(20, 3, 5308);
 data.setCell(21, 0, 21)
-data.setCell(21, 1, 'verify_home_page_tilte')
+data.setCell(21, 1, 'Verify_the_Usermanagement_sub_tabs')
 data.setCell(21, 2, 'com.buffalocart.test.MyAccountPageTest')
-data.setCell(21, 3, 5844);
+data.setCell(21, 3, 5296);
 data.setCell(22, 0, 22)
-data.setCell(22, 1, 'verify_user_login_with_newly_added_user')
-data.setCell(22, 2, 'com.buffalocart.test.LoginPageTest')
-data.setCell(22, 3, 5440);
+data.setCell(22, 1, 'Verify_date_displeyed_in_home_page')
+data.setCell(22, 2, 'com.buffalocart.test.MyAccountPageTest')
+data.setCell(22, 3, 4867);
 data.setCell(23, 0, 23)
-data.setCell(23, 1, 'verify_user_login_with_valid_user_credentials')
-data.setCell(23, 2, 'com.buffalocart.test.LoginPageTest')
-data.setCell(23, 3, 5244);
+data.setCell(23, 1, 'verify_home_page_tilte')
+data.setCell(23, 2, 'com.buffalocart.test.MyAccountPageTest')
+data.setCell(23, 3, 4534);
 data.setCell(24, 0, 24)
-data.setCell(24, 1, 'Verify_the_Usermanagement_sub_tabs')
-data.setCell(24, 2, 'com.buffalocart.test.MyAccountPageTest')
-data.setCell(24, 3, 5109);
+data.setCell(24, 1, 'verify_error_message_displyed_on_Reset_Password_page_with_invalid_email_id')
+data.setCell(24, 2, 'com.buffalocart.test.ResetPasswordPageTest')
+data.setCell(24, 3, 2452);
 data.setCell(25, 0, 25)
-data.setCell(25, 1, 'verify_error_message_displyed_on_Reset_Password_page_with_invalid_email_id')
-data.setCell(25, 2, 'com.buffalocart.test.ResetPasswordPageTest')
-data.setCell(25, 3, 3232);
+data.setCell(25, 1, 'verify_user_login_with_newly_added_user')
+data.setCell(25, 2, 'com.buffalocart.test.LoginPageTest')
+data.setCell(25, 3, 1811);
 data.setCell(26, 0, 26)
 data.setCell(26, 1, 'verify_whether_the_user_is_able_to_click_on_Remember_me_checkbox')
 data.setCell(26, 2, 'com.buffalocart.test.LoginPageTest')
-data.setCell(26, 3, 221);
+data.setCell(26, 3, 168);
 data.setCell(27, 0, 27)
 data.setCell(27, 1, 'verify_Loginpage_Title')
 data.setCell(27, 2, 'com.buffalocart.test.LoginPageTest')
-data.setCell(27, 3, 41);
+data.setCell(27, 3, 29);
 window.suiteTableData['All_Test_Suite']= { tableData: data, tableDiv: 'times-div-All_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 minutes</span>
+              <span class="suite-total-time">Total running time: 5 minutes</span>
               <div id="times-div-All_Test_Suite">
               </div> <!-- times-div-All_Test_Suite -->
             </div> <!-- times-div -->
@@ -1139,386 +1298,384 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.buffalocart.test.AddRolesTestPage</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
-                <span class="method-name">setExtent(org.testng.TestRunner@445f6f73)</span>
+                <span class="method-name">setExtent(org.testng.TestRunner@16602333)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">64 ms</span>
+                <span class="method-start">45 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verify_Add_Roles_page_title</span>
-                <span class="method-start">8792 ms</span>
+                <span class="method-start">8066 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=verify_Add_Roles_page_title status=SUCCESS method=AddRolesTestPage.verify_Add_Roles...)</span>
-                <span class="method-start">27471 ms</span>
+                <span class="method-start">24303 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">27487 ms</span>
+                <span class="method-start">24305 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verify_user_can_add_roles</span>
-                <span class="method-start">33853 ms</span>
+                <span class="method-start">30319 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=verify_user_can_add_roles status=SUCCESS method=AddRolesTestPage.verify_user_can_ad...)</span>
-                <span class="method-start">56974 ms</span>
+                <span class="method-start">52302 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.buffalocart.test.AddUserTestPage</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">56981 ms</span>
+                <span class="method-start">52304 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verify_the_error_message_displayed_without_filling_mandatory_fields_in_add_user_form</span>
-                <span class="method-start">68952 ms</span>
+                <span class="method-start">57966 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=verify_the_error_message_displayed_without_filling_mandatory_fields_in_add_user_for...)</span>
-                <span class="method-start">87256 ms</span>
+                <span class="method-start">75097 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">87258 ms</span>
+                <span class="method-start">75099 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verify_Add_Users_page_title</span>
-                <span class="method-start">94533 ms</span>
+                <span class="method-start">80548 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=verify_Add_Users_page_title status=SUCCESS method=AddUserTestPage.verify_Add_Users_...)</span>
-                <span class="method-start">113935 ms</span>
+                <span class="method-start">96375 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.buffalocart.test.EditPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">113935 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verify_Edit_User_page_title</span>
-                <span class="method-start">121871 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=verify_Edit_User_page_title status=SUCCESS method=EditPageTest.verify_Edit_User_pag...)</span>
-                <span class="method-start">141913 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">141914 ms</span>
+                <span class="method-start">96376 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verify_user_can_edit_the_user_details</span>
-                <span class="method-start">149260 ms</span>
+                <span class="method-start">102334 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.buffalocart.test.EditRolePageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">175860 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.buffalocart.test.EditPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=verify_user_can_edit_the_user_details status=SUCCESS method=EditPageTest.verify_use...)</span>
-                <span class="method-start">175860 ms</span>
+                <span class="method-start">123868 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">123869 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verify_Edit_User_page_title</span>
+                <span class="method-start">129553 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verify_Edit_User_page_title status=SUCCESS method=EditPageTest.verify_Edit_User_pag...)</span>
+                <span class="method-start">147746 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.buffalocart.test.EditRolePageTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">verify_Edit_Role_page_title</span>
-                <span class="method-start">182455 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=verify_Edit_Role_page_title status=SUCCESS method=EditRolePageTest.verify_Edit_Role...)</span>
-                <span class="method-start">200572 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">200572 ms</span>
+                <span class="method-start">147746 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <span class="method-name">verify_Edit_Role_page_title</span>
+                <span class="method-start">153982 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">171172 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verify_Edit_Role_page_title status=SUCCESS method=EditRolePageTest.verify_Edit_Role...)</span>
+                <span class="method-start">171172 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
                 <span class="method-name">verify_user_can_update_a_role</span>
-                <span class="method-start">214331 ms</span>
+                <span class="method-start">177169 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=verify_user_can_update_a_role status=SUCCESS method=EditRolePageTest.verify_user_ca...)</span>
-                <span class="method-start">241659 ms</span>
+                <span class="method-start">202348 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.buffalocart.test.LoginPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">241660 ms</span>
+                <span class="method-start">202349 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verify_Loginpage_Title</span>
-                <span class="method-start">250492 ms</span>
+                <span class="method-start">208768 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">250533 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=verify_Loginpage_Title status=SUCCESS method=LoginPageTest.verify_Loginpage_Title()...)</span>
-                <span class="method-start">250533 ms</span>
+                <span class="method-start">208797 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">208798 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verify_user_login_with_valid_user_credentials</span>
-                <span class="method-start">259696 ms</span>
+                <span class="method-start">214510 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=verify_user_login_with_valid_user_credentials status=SUCCESS method=LoginPageTest.v...)</span>
-                <span class="method-start">264941 ms</span>
+                <span class="method-start">219818 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">264942 ms</span>
+                <span class="method-start">219819 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verify_whether_the_user_is_able_to_click_on_Remember_me_checkbox</span>
-                <span class="method-start">273549 ms</span>
+                <span class="method-start">227880 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">273770 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=verify_whether_the_user_is_able_to_click_on_Remember_me_checkbox status=SUCCESS met...)</span>
-                <span class="method-start">273770 ms</span>
+                <span class="method-start">228048 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">228049 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">verify_user_login_with_newly_added_user</span>
-                <span class="method-start">283685 ms</span>
+                <span class="method-start">234748 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=verify_user_login_with_newly_added_user status=SUCCESS method=LoginPageTest.verify_...)</span>
-                <span class="method-start">289125 ms</span>
+                <span class="method-name">tearDown([TestResult name=verify_user_login_with_newly_added_user status=FAILURE method=LoginPageTest.verify_...)</span>
+                <span class="method-start">236585 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.buffalocart.test.MyAccountPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">289126 ms</span>
+                <span class="method-start">236853 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verify_home_page_tilte</span>
-                <span class="method-start">297531 ms</span>
+                <span class="method-start">243616 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=verify_home_page_tilte status=SUCCESS method=MyAccountPageTest.verify_home_page_til...)</span>
-                <span class="method-start">303375 ms</span>
+                <span class="method-start">248151 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">303377 ms</span>
+                <span class="method-start">248152 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">Verify_date_displeyed_in_home_page</span>
-                <span class="method-start">311980 ms</span>
+                <span class="method-start">254686 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=Verify_date_displeyed_in_home_page status=SUCCESS method=MyAccountPageTest.Verify_d...)</span>
-                <span class="method-start">317869 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">317870 ms</span>
+                <span class="method-start">259554 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=Verify_date_displeyed_in_home_page status=SUCCESS method=MyAccountPageTest.Verify_d...)</span>
+                <span class="method-start">259554 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">Verify_whether_user_is_navigating_to_login_page_by_clicking_on_Sign_out_button</span>
-                <span class="method-start">326185 ms</span>
+                <span class="method-start">266415 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=Verify_whether_user_is_navigating_to_login_page_by_clicking_on_Sign_out_button stat...)</span>
-                <span class="method-start">333399 ms</span>
+                <span class="method-start">272866 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">333400 ms</span>
+                <span class="method-start">272867 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">Verify_the_Usermanagement_sub_tabs</span>
-                <span class="method-start">344116 ms</span>
+                <span class="method-start">279728 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=Verify_the_Usermanagement_sub_tabs status=SUCCESS method=MyAccountPageTest.Verify_t...)</span>
-                <span class="method-start">349226 ms</span>
+                <span class="method-start">285024 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.buffalocart.test.ResetPasswordPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">349229 ms</span>
+                <span class="method-start">285026 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verify_error_message_displyed_on_Reset_Password_page_with_invalid_email_id</span>
-                <span class="method-start">357539 ms</span>
+                <span class="method-start">294066 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=verify_error_message_displyed_on_Reset_Password_page_with_invalid_email_id status=S...)</span>
-                <span class="method-start">360772 ms</span>
+                <span class="method-start">296519 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.buffalocart.test.RolesPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">360773 ms</span>
+                <span class="method-start">296520 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verify_Roles_page_title</span>
-                <span class="method-start">369614 ms</span>
+                <span class="method-start">309752 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=verify_Roles_page_title status=SUCCESS method=RolesPageTest.verify_Roles_page_title...)</span>
-                <span class="method-start">382094 ms</span>
+                <span class="method-start">322333 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">382096 ms</span>
+                <span class="method-start">322335 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verify_user_can_delete_a_role_from_the_list</span>
-                <span class="method-start">390063 ms</span>
+                <span class="method-start">328732 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=verify_user_can_delete_a_role_from_the_list status=SUCCESS method=RolesPageTest.ver...)</span>
-                <span class="method-start">409528 ms</span>
+                <span class="method-start">346216 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.buffalocart.test.SalesCommissionAgentPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">409532 ms</span>
+                <span class="method-start">346217 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verify_Sales_Commission_Agents_page_title</span>
-                <span class="method-start">417936 ms</span>
+                <span class="method-start">359089 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=verify_Sales_Commission_Agents_page_title status=SUCCESS method=SalesCommissionAgen...)</span>
-                <span class="method-start">430033 ms</span>
+                <span class="method-start">370761 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">430033 ms</span>
+                <span class="method-start">370762 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">Verify_user_can_add_sales_agent</span>
-                <span class="method-start">438549 ms</span>
+                <span class="method-start">378354 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">396217 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=Verify_user_can_add_sales_agent status=SUCCESS method=SalesCommissionAgentPageTest....)</span>
-                <span class="method-start">458255 ms</span>
+                <span class="method-start">396217 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">458255 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">verify_Edit_sales_agent_details</span>
-                <span class="method-start">466670 ms</span>
+                <span class="method-start">402670 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=verify_Edit_sales_agent_details status=SUCCESS method=SalesCommissionAgentPageTest....)</span>
-                <span class="method-start">489139 ms</span>
+                <span class="method-name">tearDown([TestResult name=verify_Edit_sales_agent_details status=FAILURE method=SalesCommissionAgentPageTest....)</span>
+                <span class="method-start">417643 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">489140 ms</span>
+                <span class="method-start">417829 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">verify_user_can_delete_a_Sales_Commission_Agents</span>
-                <span class="method-start">497821 ms</span>
+                <span class="method-start">425058 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=verify_user_can_delete_a_Sales_Commission_Agents status=FAILURE method=SalesCommiss...)</span>
-                <span class="method-start">515762 ms</span>
+                <span class="method-start">439285 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.buffalocart.test.UserPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">516094 ms</span>
+                <span class="method-start">439436 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verify_Users_page_title</span>
-                <span class="method-start">524817 ms</span>
+                <span class="method-start">445852 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">457054 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=verify_Users_page_title status=SUCCESS method=UserPageTest.verify_Users_page_title(...)</span>
-                <span class="method-start">538627 ms</span>
+                <span class="method-start">457054 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">538628 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">verify_user_search_with_valid_data</span>
-                <span class="method-start">546969 ms</span>
+                <span class="method-start">463684 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=verify_user_search_with_valid_data status=FAILURE method=UserPageTest.verify_user_s...)</span>
-                <span class="method-start">562857 ms</span>
+                <span class="method-name">tearDown([TestResult name=verify_user_search_with_valid_data status=SUCCESS method=UserPageTest.verify_user_s...)</span>
+                <span class="method-start">477943 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">563194 ms</span>
+                <span class="method-start">477944 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verify_message_displayed_by_user_search_with_invalid_data</span>
-                <span class="method-start">571421 ms</span>
+                <span class="method-start">485473 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=verify_message_displayed_by_user_search_with_invalid_data status=SUCCESS method=Use...)</span>
-                <span class="method-start">587947 ms</span>
+                <span class="method-start">500824 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">587950 ms</span>
+                <span class="method-start">500824 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">verify_user_can_delete_a_user</span>
-                <span class="method-start">596593 ms</span>
+                <span class="method-start">507395 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=verify_user_can_delete_a_user status=FAILURE method=UserPageTest.verify_user_can_de...)</span>
-                <span class="method-start">613104 ms</span>
+                <span class="method-start">524821 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.buffalocart.test.ViewPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">613422 ms</span>
+                <span class="method-start">525056 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">verify_the_details_displayed_on_view_user_page</span>
-                <span class="method-start">622156 ms</span>
+                <span class="method-start">531738 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=verify_the_details_displayed_on_view_user_page status=SUCCESS method=ViewPageTest.v...)</span>
-                <span class="method-start">642540 ms</span>
+                <span class="method-name">tearDown([TestResult name=verify_the_details_displayed_on_view_user_page status=FAILURE method=ViewPageTest.v...)</span>
+                <span class="method-start">545847 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

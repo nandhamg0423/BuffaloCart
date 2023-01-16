@@ -39,10 +39,6 @@ public class ResetPasswordPage extends ObjectUtility {
         page.clickOnElement(resetButton);
     }
 
-    public void resetErrormessage() {
-        page.clickOnElement(resetErrorMessage);
-    }
-
     public String getResetErrorMessage(){
         String reseterrorMessage = page.getElementText(resetErrorMessage);
         return reseterrorMessage;

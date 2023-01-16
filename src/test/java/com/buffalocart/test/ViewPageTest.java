@@ -6,6 +6,7 @@ import com.buffalocart.constants.Constants;
 import com.buffalocart.listeners.TestListener;
 import com.buffalocart.pages.*;
 import com.buffalocart.utilities.ExcelUtility;
+import com.buffalocart.utilities.WaitUtility;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import java.util.List;
@@ -18,6 +19,7 @@ public class ViewPageTest extends Base {
     ViewPage view;
     Constants con;
     ExcelUtility excel = new ExcelUtility();
+    WaitUtility wait=new WaitUtility();
     ThreadLocal<ExtentTest> extentTest = TestListener.getTestInstance();
 
     @Test(priority = 20, enabled = true, description = "TC_020_Verify  the details displayed on view user page")
@@ -34,11 +36,7 @@ public class ViewPageTest extends Base {
         acc.clickOnEndTour();
         extentTest.get().log(Status.PASS, "End Tour Button Clicked successfully");
         acc.clickOnUserManagement();
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        wait.setImplicitWait(driver);
         extentTest.get().log(Status.PASS, "User Management Clicked successfully");
         user = new UserPage(driver);
         user = acc.clickOnUsersLink();
@@ -47,11 +45,7 @@ public class ViewPageTest extends Base {
         List<String> listForEdit = excel.readDataFromExcel("AccountPage");
         System.out.println(listForEdit);
         userPage.searchUser("richard");
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        wait.setImplicitWait(driver);
         extentTest.get().log(Status.PASS, "Name searched successfully");
         view = user.clickOnViewButton();
         extentTest.get().log(Status.PASS, "View button clicked successfully");

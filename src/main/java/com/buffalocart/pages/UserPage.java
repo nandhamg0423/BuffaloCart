@@ -91,10 +91,6 @@ public class UserPage extends ObjectUtility {
         String nameInSearch = page.getElementText(searchFieldName);
         return nameInSearch;
     }
-    public String getDisplayedName(){
-        String displayedNamee = page.getElementText(displayedName);
-        return displayedNamee;
-    }
     public String getUpdateMessage() {
         String updateMessagee = page.getElementText(updateMessage);
         return updateMessagee;

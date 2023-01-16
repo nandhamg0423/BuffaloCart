@@ -7,6 +7,7 @@ import com.buffalocart.constants.Constants;
 import com.buffalocart.listeners.TestListener;
 import com.buffalocart.pages.*;
 import com.buffalocart.utilities.ExcelUtility;
+import com.buffalocart.utilities.WaitUtility;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import java.util.List;
@@ -19,6 +20,7 @@ public class RolesPageTest extends Base {
     Constants con;
     RolesPage role;
     ExcelUtility excel = new ExcelUtility();
+    WaitUtility wait=new WaitUtility();
     ThreadLocal<ExtentTest> extentTest = TestListener.getTestInstance();
 
     @Test(priority = 21, enabled = true, description = "TC_021_ Verify Roles page title")
@@ -35,11 +37,7 @@ public class RolesPageTest extends Base {
         acc.clickOnEndTour();
         extentTest.get().log(Status.PASS, "End Tour Button Clicked successfully");
         acc.clickOnUserManagement();
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        wait.setImplicitWait(driver);
         extentTest.get().log(Status.PASS, "User Management Clicked successfully");
         role = new RolesPage(driver);
         role = acc.clickOnRoleLink();
@@ -64,30 +62,18 @@ public class RolesPageTest extends Base {
         acc.clickOnEndTour();
         extentTest.get().log(Status.PASS, "End Tour Button Clicked successfully");
         acc.clickOnUserManagement();
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        wait.setImplicitWait(driver);
         extentTest.get().log(Status.PASS, "User Management Clicked successfully");
         role = new RolesPage(driver);
         role = acc.clickOnRoleLink();
         extentTest.get().log(Status.PASS, "Users Clicked successfully");
         List<String> list1 = excel.readDataFromExcel("AccountPage");
         role.searchRole(list1.get(36));
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        wait.setImplicitWait(driver);
         role.clickOnDeleteRolesButton();
         extentTest.get().log(Status.PASS, "Roles Delete Button Clicked successfully");
         role.clickOnDeleteOkButton();
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        wait.setImplicitWait(driver);
         String actualRoleDeletedMessage=role.getDeletedMessage();
         String expectedRoleDeletedMessage= list1.get(38);
         Assert.assertEquals(actualRoleDeletedMessage,expectedRoleDeletedMessage,"Invalid message");

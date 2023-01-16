@@ -50,16 +50,16 @@ public class LoginPageTest extends Base {
 
     @Test(priority = 3, dataProvider = "user_credentials", enabled = true, groups = {"Regression"}, description = "TC_003_Verify the error message displayed for user login with invalid credentials")
     public void verify_the_error_message_displayed_for_user_login_with_invalid_credentials(String uname, String pword) {
-        extentTest.get().assignCategory("Regression");
+        //extentTest.get().assignCategory("Regression");
         login = new LoginPage(driver);
         login.enterUsername(uname);
-        extentTest.get().log(Status.PASS, "Username entered successfully");
+        //extentTest.get().log(Status.PASS, "Username entered successfully");
         login.enterPassword(pword);
-        extentTest.get().log(Status.PASS, "Password entered successfully");
+        //extentTest.get().log(Status.PASS, "Password entered successfully");
         login.clickOnRememberMeCheckBox();
-        extentTest.get().log(Status.PASS, "Checkbox clicked successfully");
+        //extentTest.get().log(Status.PASS, "Checkbox clicked successfully");
         acc = login.clickOnloginButton();
-        extentTest.get().log(Status.PASS, "ILogin button clicked successfully");
+        //extentTest.get().log(Status.PASS, "ILogin button clicked successfully");
         String expectedErrorMessage = "These credentials do not match our records.";
         String actualErrorMessage = login.getLoginFailedMessage();
         Assert.assertEquals(actualErrorMessage, expectedErrorMessage, "Logged In-Having Error in Login");
@@ -80,7 +80,6 @@ public class LoginPageTest extends Base {
         extentTest.get().log(Status.PASS, "Checkbox clicked successfully");
         Boolean checkBoxSelectionStatus = login.getRememberMeCheckBoxSelectionStatus();
         Assert.assertTrue(checkBoxSelectionStatus, "Remember me checkbox not selected");
-        extentTest.get().log(Status.PASS, "Remember me selected successfully");
     }
 
     @Test(priority = 14, enabled = true, description = "TC_014_Verify user login with newly added user")

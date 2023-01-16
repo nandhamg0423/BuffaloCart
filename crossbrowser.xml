@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test name="Crossbrowser Testing">
+        <parameter name="browser" value="edge"/>
+        <parameter name="url" value="https://qalegend.com/billing/public/login"/>
+        <classes>
+            <class name="com.buffalocart.test.LoginPageTest">
+                <methods>
+                    <include name="verify_Loginpage_Title"/>
+
+                </methods>
+            </class>
+            <class name="com.buffalocart.test.ResetPasswordPageTest">
+                <methods>
+                    <include name="verify_error_message_displyed_on_Reset_Password_page_with_invalid_email_id"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Crossbrowser Testing1">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="url" value="https://qalegend.com/billing/public/login"/>
+        <classes>
+            <class name="com.buffalocart.test.LoginPageTest">
+                <methods>
+                    <include name="verify_Loginpage_Title"/>
+                </methods>
+            </class>
+            <class name="com.buffalocart.test.ResetPasswordPageTest">
+                <methods>
+                    <include name="verify_error_message_displyed_on_Reset_Password_page_with_invalid_email_id"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

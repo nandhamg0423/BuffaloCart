@@ -141,10 +141,6 @@ public class SalesCommissionAgentPage extends ObjectUtility {
         String deleteMessage = page.getElementText(deletedMessage);
         return deleteMessage;
     }
-    public UserPage clickOnOkButton() {
-        page.clickOnElement(okButtonForDelete);
-        return new UserPage(driver);
-    }
     public String getSalesAddedMessage() {
         String addedMessage = page.getElementText(salesAddedMessage);
         return addedMessage;

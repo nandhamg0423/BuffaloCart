@@ -65,7 +65,6 @@ public WebDriver driver;
         ExtentManager.createInstance().createTest(testContext.getName(), "TEST FAILED");
     }
     @BeforeMethod(alwaysRun = true)
-    //@Parameters({"browser", "url"})
     public void setUp() {
         String browser=prop.getProperty("browser");
         String url= prop.getProperty("url");

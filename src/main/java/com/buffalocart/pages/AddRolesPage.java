@@ -28,10 +28,6 @@ public class AddRolesPage extends ObjectUtility {
 
     /**user action**/
 
-    public String getAddRolesTitle() {
-        String addRolesPageTitle = page.getPageTitle(driver);
-        return addRolesPageTitle;
-    }
     public void enterRoleName(String rolName) {
         page.enterText(roleName, rolName);
     }

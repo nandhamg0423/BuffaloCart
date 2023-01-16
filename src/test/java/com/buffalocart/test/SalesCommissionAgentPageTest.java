@@ -7,6 +7,7 @@ import com.buffalocart.listeners.TestListener;
 import com.buffalocart.pages.*;
 import com.buffalocart.utilities.ExcelUtility;
 import com.buffalocart.utilities.RandomDataUtility;
+import com.buffalocart.utilities.WaitUtility;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import java.util.List;
@@ -19,6 +20,7 @@ public class SalesCommissionAgentPageTest extends Base {
     SalesCommissionAgentPage salescommision;
     Constants con;
     ExcelUtility excel = new ExcelUtility();
+    WaitUtility wait=new WaitUtility();
     RandomDataUtility random1 = new RandomDataUtility();
     String randomMail = random1.random();
     ThreadLocal<ExtentTest> extentTest = TestListener.getTestInstance();
@@ -37,11 +39,7 @@ public class SalesCommissionAgentPageTest extends Base {
         acc.clickOnEndTour();
         extentTest.get().log(Status.PASS, "End Tour Button Clicked successfully");
         acc.clickOnUserManagement();
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        wait.setImplicitWait(driver);
         salescommision = acc.clickOnSalesCommissionLink();
         extentTest.get().log(Status.PASS, "SalesCommissionAgentPage Clicked successfully");
         List<String> listForUsers = excel.readDataFromExcel("AccountPage");
@@ -63,21 +61,13 @@ public class SalesCommissionAgentPageTest extends Base {
         acc.clickOnEndTour();
         extentTest.get().log(Status.PASS, "End Tour Button Clicked successfully");
         acc.clickOnUserManagement();
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        wait.setImplicitWait(driver);
         salescommision = acc.clickOnSalesCommissionLink();
         extentTest.get().log(Status.PASS, "SalesCommissionAgentPage Clicked successfully");
         salescommision.clickOnAddSalesCommissionButton();
         extentTest.get().log(Status.PASS, "SalesCommission AddButton Clicked successfully");
         List<String> list1 = excel.readDataFromExcel("AccountPage");
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        wait.setImplicitWait(driver);
         salescommision.enterPrefix(list1.get(27));
         salescommision.enterFirstName(list1.get(28));
         salescommision.enterLastName(list1.get(29));
@@ -86,11 +76,7 @@ public class SalesCommissionAgentPageTest extends Base {
         salescommision.enterAddress(list1.get(31));
         salescommision.enterSalesPercent(list1.get(32));
         salescommision.clickOnSalesCommissionSaveButton();
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        wait.setImplicitWait(driver);
         String actualAddedMessage=salescommision.getSalesAddedMessage();
         String expectedAddeddMessage=list1.get(41);
         Assert.assertEquals(actualAddedMessage,expectedAddeddMessage,"Invalid message");
@@ -110,37 +96,21 @@ public class SalesCommissionAgentPageTest extends Base {
         acc.clickOnEndTour();
         extentTest.get().log(Status.PASS, "End Tour Button Clicked successfully");
         acc.clickOnUserManagement();
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        wait.setImplicitWait(driver);
         salescommision = acc.clickOnSalesCommissionLink();
         extentTest.get().log(Status.PASS, "SalesCommissionAgentPage Clicked successfully");
         salescommision.enterOnSearch("Edwin");
         extentTest.get().log(Status.PASS, "Name entered on search field successfully");
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        wait.setImplicitWait(driver);
         salescommision.clickOnSalesCommissionEditButton();
         extentTest.get().log(Status.PASS, "Edit Button Clicked successfully");
         List<String> list1 = excel.readDataFromExcel("AccountPage");
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        wait.setImplicitWait(driver);
         salescommision.enterLastName("Marina");
         extentTest.get().log(Status.PASS, "Lastname Edited successfully");
         salescommision.clickOnSalesCommissionSaveButton();
         extentTest.get().log(Status.PASS, "Save button clicked successfully");
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        wait.setImplicitWait(driver);
         String actualUpdatedMessage=salescommision.getUpdateMessage();
         String expectedUpdatedMessage=list1.get(39);
         Assert.assertEquals(actualUpdatedMessage,expectedUpdatedMessage,"Invalid message");
@@ -160,35 +130,19 @@ public class SalesCommissionAgentPageTest extends Base {
         acc.clickOnEndTour();
         extentTest.get().log(Status.PASS, "End Tour Button Clicked successfully");
         acc.clickOnUserManagement();
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        wait.setImplicitWait(driver);
         salescommision = acc.clickOnSalesCommissionLink();
         extentTest.get().log(Status.PASS, "SalesCommissionAgentPage Clicked successfully");
         salescommision.enterOnSearch("delete");
         extentTest.get().log(Status.PASS, "Name entered on search field successfully");
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        wait.setImplicitWait(driver);
         salescommision.clickOnSalesCommissionDeleteButton();
         extentTest.get().log(Status.PASS, "Delete Button clicked successfully");
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        wait.setImplicitWait(driver);
         salescommision.clickOnOkDeleteButton();
         extentTest.get().log(Status.PASS, "Ok button clicked successfully");
         List<String> list1 = excel.readDataFromExcel("AccountPage");
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        wait.setImplicitWait(driver);
         String actualDeletedMessage=salescommision.getDeletedMessage();
         String expectedDeletedMessage=list1.get(40);
         Assert.assertEquals(actualDeletedMessage,expectedDeletedMessage,"Invalid message");

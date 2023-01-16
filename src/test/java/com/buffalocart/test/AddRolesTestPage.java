@@ -7,6 +7,7 @@ import com.buffalocart.constants.Constants;
 import com.buffalocart.listeners.TestListener;
 import com.buffalocart.pages.*;
 import com.buffalocart.utilities.ExcelUtility;
+import com.buffalocart.utilities.WaitUtility;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import java.util.List;
@@ -21,6 +22,7 @@ public class AddRolesTestPage extends Base {
     AddRolesPage addrole;
     Constants con;
     ExcelUtility excel = new ExcelUtility();
+    WaitUtility wait=new WaitUtility();
     ThreadLocal<ExtentTest> extentTest = TestListener.getTestInstance();
 
     @Test(priority = 22, enabled = true, description = "TC_0220_ VVerify Add Roles page title ")
@@ -37,11 +39,7 @@ public class AddRolesTestPage extends Base {
         acc.clickOnEndTour();
         extentTest.get().log(Status.PASS, "End Tour Button Clicked successfully");
         acc.clickOnUserManagement();
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        wait.setImplicitWait(driver);
         extentTest.get().log(Status.PASS, "User Management Clicked successfully");
         role = new RolesPage(driver);
         role = acc.clickOnRoleLink();
@@ -69,11 +67,7 @@ public class AddRolesTestPage extends Base {
         acc.clickOnEndTour();
         extentTest.get().log(Status.PASS, "End Tour Button Clicked successfully");
         acc.clickOnUserManagement();
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        wait.setImplicitWait(driver);
         extentTest.get().log(Status.PASS, "User Management Clicked successfully");
         role = new RolesPage(driver);
         role = acc.clickOnRoleLink();

@@ -30,6 +30,7 @@ public class EditRolePage extends ObjectUtility {
     @FindBy(css = _roleUpdateMessage)
     private WebElement roleUpdateMessage;
 
+
     /**user action**/
 
     public void enterEditRolePageValue(String editRole) {

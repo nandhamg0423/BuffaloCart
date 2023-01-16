@@ -6,6 +6,7 @@ import com.buffalocart.constants.Constants;
 import com.buffalocart.listeners.TestListener;
 import com.buffalocart.pages.*;
 import com.buffalocart.utilities.ExcelUtility;
+import com.buffalocart.utilities.WaitUtility;
 import org.testng.Assert;
 import org.testng.Converter;
 import org.testng.annotations.Test;
@@ -19,6 +20,7 @@ public class UserPageTest extends Base {
     EditPage edit;
     Constants con;
     ExcelUtility excel = new ExcelUtility();
+    WaitUtility wait=new WaitUtility();
     ThreadLocal<ExtentTest> extentTest = TestListener.getTestInstance();
 
     @Test(priority = 10, enabled = true, description = "TC_010_Verify Users page title")
@@ -35,11 +37,7 @@ public class UserPageTest extends Base {
         acc.clickOnEndTour();
         extentTest.get().log(Status.PASS, "End Tour Button Clicked successfully");
         acc.clickOnUserManagement();
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        wait.setImplicitWait(driver);
         extentTest.get().log(Status.PASS, "User Management Clicked successfully");
         user = new UserPage(driver);
         user = acc.clickOnUsersLink();
@@ -64,11 +62,7 @@ public class UserPageTest extends Base {
         acc.clickOnEndTour();
         extentTest.get().log(Status.PASS, "End Tour Button Clicked successfully");
         acc.clickOnUserManagement();
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        wait.setImplicitWait(driver);
         extentTest.get().log(Status.PASS, "User Management Clicked successfully");
         user = new UserPage(driver);
         user = acc.clickOnUsersLink();
@@ -77,11 +71,7 @@ public class UserPageTest extends Base {
         user.searchUser(listAddUserPage.get(8));
         extentTest.get().log(Status.PASS, "Name searched successfully");
         String actualSearchName=user.getSearchFieldName();
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        wait.setImplicitWait(driver);
         //String expectedSearchName=user.getDisplayedName();
         //Assert.assertEquals(actualSearchName,expectedSearchName,"Invalid search data");
     }
@@ -101,29 +91,17 @@ public class UserPageTest extends Base {
         acc.clickOnEndTour();
         extentTest.get().log(Status.PASS, "End Tour Button Clicked successfully");
         acc.clickOnUserManagement();
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        wait.setImplicitWait(driver);
         extentTest.get().log(Status.PASS, "User Management Clicked successfully");
         user = new UserPage(driver);
         user = acc.clickOnUsersLink();
         extentTest.get().log(Status.PASS, "Users link Clicked successfully");
         List<String> listAddUserPage = excel.readDataFromExcel("AccountPage");
-        try {
-            Thread.sleep(600);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        wait.setImplicitWait(driver);
         user = new UserPage(driver);
         user.searchUser(listAddUserPage.get(15));
         extentTest.get().log(Status.PASS, "Invalid data entered successfully");
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        wait.setImplicitWait(driver);
         String actualUserDataMessage = user.getInvalidDataMessage();
         String expectedUserDataMessage = listAddUserPage.get(16);
         Assert.assertEquals(actualUserDataMessage, expectedUserDataMessage, "Invalid data");
@@ -142,11 +120,7 @@ public class UserPageTest extends Base {
         acc.clickOnEndTour();
         extentTest.get().log(Status.PASS, "End Tour Button Clicked successfully");
         acc.clickOnUserManagement();
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        wait.setImplicitWait(driver);
         extentTest.get().log(Status.PASS, "User Management Clicked successfully");
         user = new UserPage(driver);
         user = acc.clickOnUsersLink();
@@ -154,20 +128,12 @@ public class UserPageTest extends Base {
         userPage = new AddUserPage(driver);
         List<String> listForEdit = excel.readDataFromExcel("AccountPage");
         userPage.searchUser("Tinu");
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        wait.setImplicitWait(driver);
         user.clickOnDeleteButton();
         extentTest.get().log(Status.PASS, "Delete button Clicked successfully");
         user.clickOnOkButton();
         extentTest.get().log(Status.PASS, "Ok button Clicked successfully");
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        wait.setImplicitWait(driver);
         String actualDeletedMessage = user.getDeletedMessage();
         String expectedDeletedMessage = listForEdit.get(35);
         Assert.assertEquals(actualDeletedMessage, expectedDeletedMessage, "Invalid data");

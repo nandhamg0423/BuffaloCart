@@ -10,6 +10,7 @@ import com.buffalocart.pages.MyAccountPage;
 import com.buffalocart.pages.UserPage;
 import com.buffalocart.utilities.ExcelUtility;
 import com.buffalocart.utilities.RandomDataUtility;
+import com.buffalocart.utilities.WaitUtility;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import java.util.List;
@@ -20,6 +21,7 @@ public class AddUserTestPage extends Base {
     AddUserPage userPage;
     Constants con;
     ExcelUtility excel = new ExcelUtility();
+    WaitUtility wait=new WaitUtility();
     RandomDataUtility random1 = new RandomDataUtility();
     String randomMail = random1.random();
     String randomId = random1.randomId();
@@ -39,11 +41,7 @@ public class AddUserTestPage extends Base {
         acc.clickOnEndTour();
         extentTest.get().log(Status.PASS, "End Tour Button Clicked successfully");
         acc.clickOnUserManagement();
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        wait.setImplicitWait(driver);
         extentTest.get().log(Status.PASS, "User Management Clicked successfully");
         user = new UserPage(driver);
         user = acc.clickOnUsersLink();
@@ -93,11 +91,7 @@ public class AddUserTestPage extends Base {
         acc.clickOnEndTour();
         extentTest.get().log(Status.PASS, "End Tour Button Clicked successfully");
         acc.clickOnUserManagement();
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        wait.setImplicitWait(driver);
         extentTest.get().log(Status.PASS, "User Management Clicked successfully");
         user = new UserPage(driver);
         user = acc.clickOnUsersLink();
@@ -147,11 +141,7 @@ public class AddUserTestPage extends Base {
         acc.clickOnEndTour();
          extentTest.get().log(Status.PASS, "End Tour Button Clicked successfully");
         acc.clickOnUserManagement();
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        wait.setImplicitWait(driver);
         extentTest.get().log(Status.PASS, "User Management Clicked successfully");
         user = new UserPage(driver);
         user = acc.clickOnUsersLink();
